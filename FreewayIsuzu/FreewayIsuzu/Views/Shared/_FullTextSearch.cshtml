@@ -1,0 +1,224 @@
+﻿<style type="text/css">
+    #loFtsBtns
+    {
+        border-radius: 0px 5px 5px 0px;
+        float: left;
+        width: 34px;
+        height: 32px;
+        background-color: #008000;
+        cursor: pointer;
+        background-image: url("/Content/images/leoSearchIcon.png");
+        background-size: 100%;
+    }
+
+    #loSearchInput
+    {
+        height: 22px;
+        width: 93%;
+        float: left;
+        border-radius: 5px 0px 0px 5px;
+        background-color: #EEE;
+        margin-bottom: 0px;
+    }
+
+    #loFullTextSearchHolder
+    {
+        padding: 9px 5px;
+        display: table;
+        width: 99%;
+        background-color: #EAF1FB;
+        margin-bottom: 4px;
+        border: 1px solid #CDCDCD;
+    }
+</style>
+<div id="loFullTextSearchHolder">
+    <div id="loFtsInputHolder">
+        <input id="loSearchInput" type="text" placeholder="Search for year, make, model, trim and stock" />
+    </div>
+    <div id="loFtsBtns" style="">
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#loSearchInput").focus();
+
+        $("#loSearchInput").keyup(function (event) {
+            if (event.keyCode == 13) {
+                $("#loFtsBtns").trigger("click");
+               
+            }
+        });
+
+        $("#loFtsBtns").click(function() {
+            if ($("#loSearchInput").val() != "") {
+                $("#inventory").html('<div id="loading-holder" style="width: 100%; height: 600px;"><img src="/Content/images/ajax-loader.gif" style="margin-left: 43%; width: 100px; height: 100px; border: none; margin-top: 33%;"></div>');
+                $.ajax({
+                    async: true,
+                    type: "POST",
+                    url: "/Inventory/FullTextSearchWithFullResult",
+                    data: {
+                        "searchTerm": $("#loSearchInput").val(),
+                        
+                    },
+                    dataType: "json",
+                    cache: false,
+                    success: function (data) {
+                       // console.log(data);
+                        inventoryFullTextSearch(data);
+                    }
+                });
+            }
+        });
+
+        function inventoryFullTextSearch(data) {
+
+            var htmlO = '<div class="span12">';
+            if (data.length == 0) {
+                htmlO += '<div class="nocars">There is no cars available.</div>';
+            }
+            $.each(data, function (index, item) {
+                item["ModelYear"] = item.Year;
+                item["StockNumber"] = item.Stock;
+                if (!item.Make) {
+                    item.Make = "";
+                }
+                if (!item.Mileage) {
+                    item.Mileage = "Not Specified";
+                }
+
+                if (!item.ExteriorColor) {
+                    item.ExteriorColor = "Not Specified";
+                }
+
+                if (!item.InteriorColor) {
+                    item.InteriorColor = "Not Specified";
+                }
+
+                var yMm = item.ModelYear + " " + item.Make + " " + item.Model + " " + item.Trim;
+                if (item.Model) {
+                    item.Model = item.Model.replace("/", "_");
+                }
+                var urlDetail = FreewayIsuzuWebURL + "/" + page + "/" + item.ModelYear + "-" + item.Make + "-" + item.Model + "/" + item.Vin;
+                urlDetail = urlDetail.replace(/\s/g, '-');
+                urlDetail = urlDetail.replace('"', '');
+
+                htmlO += '<div class="row vehicle-listing">';
+                htmlO += '<div class="span3 listing-container">';
+                htmlO += ' <div class="img">';
+                htmlO += '<a href="' + urlDetail + '" class="thumbnail">';
+                htmlO += '<table class="imageMid" style="vertical-align:middle;"><tbody><tr><td style="vertical-align:middle;">';
+
+                var urlImg = '';
+                var classImg = '';
+                var cleanImgUrl;
+                if (item.ThumbnailUrl) {
+                    //cleanImgUrl = item.CarThumbnailImageUrl.replace('|', ',');
+                    //urlImg = cleanImgUrl.split(",")[0];
+                    urlImg = item.ThumbnailUrl;
+                } else if (item.CarImageUrl) {
+                    //cleanImgUrl = item.CarThumbnailImageUrl.replace('|', ',');
+                    //urlImg = cleanImgUrl.split(",")[0];
+                    urlImg = item.PhotoUrl;
+                } else {
+                    urlImg = FreewayIsuzuWebURL + "/Content/images/no-images.jpg";
+                    classImg = "imgDefault";
+                }
+
+                htmlO += '<img class="' + classImg + '" alt="' + yMm + '" src="' + urlImg + '">';
+                htmlO += '</td></tr></tbody></table></a></div></div>';
+
+                htmlO += '<div class="span9 listing-container"><div class="row">';
+                htmlO += '<div class="span6 description">';
+                htmlO += '<a href="' + urlDetail + '"><h3 class="name">' + item.ModelYear + " " + item.Make + " " + item.Model + '</h3></a>';
+
+                htmlO += '<ul class="unstyled">';
+
+                htmlO += '<li>Mileage: ' + CommaFormatted(item.Mileage.toString()) + '</li>';
+                htmlO += '<li>Ext: ' + item.ExteriorColor + '</li>';
+                htmlO += '<li>Int: ' + item.InteriorColor + '</li>';
+                htmlO += '<li>Stock: #' + item.StockNumber + '</li>';
+                htmlO += '<li>VIN: ' + item.Vin + '</li>';
+                htmlO += '</ul>';
+                htmlO += '</div>';
+                htmlO += '<div class="span3 price">';
+
+                if (item.Condition == "New") {
+                    if (!item.SalePrice || item.SalePrice == "00" || item.SalePrice == "$0") {
+                        htmlO += '<span class="internetPrice">Call for Price</span>';
+                    } else {
+                        htmlO += '<span class="labelinternetPrice">Internet Price : </span>';
+                        htmlO += '<span class="internetPrice"> $' + CommaFormatted(item.SalePrice) + '</span>';
+                    }
+
+                    if (!item.MSRP || item.MSRP == "00" || item.MSRP == "$0") {
+                        //   htmlO += '<h2>Call for Price</h2>';
+                    } else {
+                        htmlO += '<h4 class="msrpPrice">MSRP: $' + CommaFormatted(item.MSRP) + '</h2>';
+                    }
+
+                    if (!item.DealerDiscount || item.DealerDiscount == "00" || item.DealerDiscount == "$0") {
+                        //   htmlO += '<h2>Call for Price</h2>';
+                    } else {
+                        htmlO += '<h4 class="discountPrice">Discount: $' + CommaFormatted(item.DealerDiscount) + '</h2>';
+                    }
+                } else {
+                    if (!item.SalePrice || item.SalePrice == "00" || item.SalePrice == "$0") {
+                        htmlO += '<span class="internetPrice">Call for Price</span>';
+                    } else {
+                        //if (item.WindowStickerPrice != "0") {
+                        //    htmlO += '<span class="labelretailPrice">Retail Price : </span>';
+                        //    htmlO += '<span class="retailPrice"> ' + item.WindowStickerPrice + '</span>';
+                        //    htmlO += '<br/>';
+                        //    htmlO += '<br/>';
+
+                        //}
+                        htmlO += '<div class="internetPriceHolder">';
+                        htmlO += '<span class="labelinternetPrice">Internet Price : </span>';
+                        htmlO += '<span class="internetPrice"> $' + CommaFormatted(item.SalePrice) + '</span>';
+                        htmlO += '</div>';
+
+                    }
+                }
+
+
+                //if (item.Condition == "New") {
+                //    if (!item.MSRP || item.MSRP == "00" || item.MSRP == "$0") {
+                //        //   htmlO += '<h2>Call for Price</h2>';
+                //    } else {
+                //        htmlO += '<h4 class="msrpPrice">MSRP: ' + item.MSRP + '</h2>';
+                //    }
+
+                //    if (!item.DealerDiscount || item.DealerDiscount == "00" || item.DealerDiscount == "$0") {
+                //        //   htmlO += '<h2>Call for Price</h2>';
+                //    } else {
+                //        htmlO += '<h4 class="discountPrice">Discount: ' + item.DealerDiscount + '</h2>';
+                //    }
+                //}
+
+
+                //if (!item.SalePrice || item.SalePrice == "00" || item.SalePrice == "$0") {
+                //    htmlO += '<h2>Call for Price</h2>';
+                //} else {
+                //    htmlO += '<h2>$' + CommaFormatted(item.SalePrice.toString()) + '</h2>';
+                //}
+
+
+
+                htmlO += ' <a target="_blank" href="http://www.carfax.com/VehicleHistory/p/Report.cfx?vin=' + item.Vin + '"><img alt="' + yMm + '  Freeway Isuzu Carfax Report" src="/Content/images/carfax-large.jpg"></a>';
+                htmlO += '</div></div>';
+                if (item.Descriptions) {
+                    htmlO += '<p title="' + item.Descriptions + '">Description: ' + item.Descriptions.substr(0, 100) + '...!</p>';
+                }
+                htmlO += '</div></div>';
+
+            });
+
+            htmlO += '</div>';
+
+            $("#inventory").html(htmlO);
+        }
+    });
+
+
+
+</script>

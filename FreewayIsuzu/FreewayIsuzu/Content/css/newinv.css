@@ -1,0 +1,85 @@
+.help-inline {
+	display: block;
+}
+
+#form-hider {
+	display: none;
+}
+
+.form-wrap {
+	background: white !important;
+	padding: 10px;
+	width: 300px;
+	overflow: auto;
+}
+
+.form-wrap form {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form-wrap h3 {
+	color: red !important;
+	font-size: 2em;
+}
+
+.form-wrap h4 {
+	font-size: 1.3em;
+	margin-bottom: 10px;
+}
+
+.form-wrap h1,h2,p {
+	color: #222222 !important;
+}
+
+.form-section div {
+	overflow: visible;
+}
+
+.form-wrap div input[type="text"] {
+	width: 260px !important;
+}
+
+.form-wrap textarea {
+	width: 260px !important;
+}
+
+.form-wrap input[value="Submit"] {
+	width: 295px !important;
+}
+
+#ui-datepicker-div,#ui-datepicker-div a {
+	color: black !important;
+}
+
+ul.vehicle-info-table {
+	position: relative;
+}
+
+ul.vehicle-info-table li {
+	display: block;
+	clear: left;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.vehicle-info-table h3 {
+	background: #ED1E24;
+	padding: .3em .5em .3em .5em;
+	margin-top: 10px;
+}
+
+.vehicle-info-table .label {
+	display: inline-block;
+	background: transparent;
+	color: inherit;
+	font-family: inherit;
+	text-transform: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	border: none;
+	float: left;
+	width: 120px;
+	margin-left: 10px;
+}

@@ -1,0 +1,79 @@
+﻿@using System.Configuration
+@model List<vincontrol.Application.ViewModels.CommonManagement.CarShortViewModel>
+
+@{
+    ViewBag.Title = "Vehicle Specials";
+}
+
+@section meta{
+    <meta name="description" content="Freeway Isuzu - Vehicle specials ✓ Finding your used trucks ✓ new trucks ✓ Hundreds of cars for sale ✓ Good prices ✓ Daily updated" />
+}
+
+<link type="text/css" rel="stylesheet" href="/Content/css/lease.css" />
+<link type="text/css" rel="stylesheet" href="/Content/css/responsive.css" />
+<link type="text/css" rel="stylesheet" href="/Content/css/responsiveShowroom.css" />
+<link type="text/css" rel="stylesheet" href="/Content/css/responsiveSpecials.css" />
+<div class="row specials" id="content" style="padding-bottom: 50px;">
+    <h1 style="display: none;">Vehicle Specials</h1>
+    @if (!Model.Any())
+    {
+        <div style="font-size: 15px;font-style: italic;padding-left: 10px;">There is no featured cars.</div>
+    }
+    else
+    {
+        foreach (var item in Model)
+        {
+            <a href="/Inventory/Detail/@item.ModelYear-@item.Make.Replace(" ", "-").Replace("/","-")-@item.Model.Replace(" ", "-").Replace("/","-")/@item.Vin">
+                <div class="specialsItems">
+                    <div class="specialsImg">
+                        @if (item.CarThumbnailImageUrl != "")
+                        {
+                            <img src="@item.CarThumbnailImageUrl.Split(',')[0]" alt="@(string.Format("{0} {1} {2} {3}", item.ModelYear.ToString(), item.Make, item.Model, item.Trim))" />
+                        }
+                        else
+                        {
+                            <img src=@(ConfigurationManager.AppSettings["freewayisuzu:WebURL"] + "/Content/images/no-images.jpg") alt="No image" />
+                        }
+
+                    </div>
+                    <div class="specialsInfo">
+                        <h2 class="specialsHeader">@item.ModelYear @item.Make @item.Model @item.Trim</h2>
+                        <div class="specialsOthers">
+                            <div class="spOthersItem">
+                                <div class="spItemKey">Price:</div>
+                                <div class="spItemValue">@item.SalePrice </div>
+                            </div>
+                            <div class="spOthersItem">
+                                <div class="spItemKey">VIN:</div>
+                                <div class="spItemValue">@item.Vin</div>
+                            </div>
+                            <div class="spOthersItem">
+                                <div class="spItemKey">Stock:</div>
+                                <div class="spItemValue">@item.StockNumber</div>
+                            </div>
+                            <div class="spOthersItem">
+                                <div class="spItemKey">Condition:</div>
+                                <div class="spItemValue">@item.Condition</div>
+                            </div>
+                            <div class="spOthersItem">
+                                <div class="spItemKey">Exterior Color:</div>
+                                <div class="spItemValue">@item.ExteriorColor</div>
+                            </div>
+                            <div class="spOthersItem">
+                                <div class="spItemKey">Miles:</div>
+                                <div class="spItemValue">@item.Mileage</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </a>
+        }
+    }
+
+    <div style="height: 20px;" class="clear"></div>
+</div>
+<script type="text/javascript">
+    $("div.mn-specials").addClass("nav-active");
+</script>
+

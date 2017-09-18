@@ -1,0 +1,119 @@
+﻿@{
+    ViewBag.Title = "Parts Specials";
+}
+
+@section meta{
+    <meta name="description" content="Freeway Isuzu - Parts specials ✓ Finding your used trucks ✓ new trucks ✓ Hundreds of cars for sale ✓ Good prices ✓ Daily updated" />
+}
+
+<link type="text/css" rel="stylesheet" href="/Content/css/responsive.css" />
+<link type="text/css" rel="stylesheet" href="/Content/css/serviceInfoResponsive.css"/>
+<style>
+    #tertiary-cell h1 {
+        color: #333 !important;
+        font-size: 24px;
+    }
+</style>
+
+<div class="row specials" id="content">
+
+    <div class="span12" id="tertiary-cell">
+        <!-- MAIN COLUMN CELL -->
+        <!-- BEGIN EDIT CONTENT -->
+
+        <div class="span12" id="parts-specials"
+            style="margin-left: 0 !important">
+            <!-- AD CELLS -->
+            <h1>Parts Specials</h1>
+            <img class="coupon" src="/Content/images/freewayisuzuads.jpg" alt="Parts Specials" title="Parts Specials" style="border: 1px solid black; width: 712px; margin-top: 5px;">
+            <a class="btn success print" target="_blank" style="margin-bottom: 20px;" href='/Content/pdf/parts-coupon.pdf'>Print
+                Coupon</a>
+            <h2>Priority Service Maintenance Program</h2>
+            <p>
+                Isuzu's Priority Service Maintenance Program provides
+                manufacturer approved scheduled maintenance.
+            </p>
+
+            <h3>Eligible Vehicles</h3>
+            <p>
+                All 2008 N/F-Series and newer Diesel and Gas model vehicles
+                distributed by Isuzu Commercial Truck of America, Inc., subject to
+                utilization and mileage guidelines after submission and approval
+                by Isuzu.
+            </p>
+
+            <h3>Available Coverage</h3>
+            <p>
+                Customer should select Priority Service Maintenance Program
+                coverage based on time and mileage based on historical and
+                estimated utilization. Subject to credit approval, customer may be
+                able to finance the cost of the Program in conjunction with a
+                lease or finance contract with Isuzu Finance of America, Inc.
+                Standard Extended Powertrain Warranty coverage is included in
+                Priority Service Maintenance Programs with program terms that
+                exceed the vehicle's base warranty.
+            </p>
+
+            <h3>Limitation of Coverage</h3>
+            <p>
+                The quantity of maintenance services is fixed based on the
+                particular program coverage selected by the customer. Once all
+                maintenance program services have been provided, the customer will
+                receive no additional services under the program unless additional
+                services are purchased.
+            </p>
+
+            <h3>Customer Obligations</h3>
+            <p>
+                Customer is responsible for proper vehicle operation and the
+                timely scheduling of maintenance services with participating
+                dealers. Customer is responsible for conducting pre-trip
+                inspections on a regular basis as recommended. Maintenance
+                services may only be obtained from participating dealers, but
+                Warranty and Extended Warranty services may be conducted by any
+                authorized dealer. In the event of a suspected component defect or
+                failure, Customer must present the vehicle to an authorized dealer
+                as soon as possible. Failure and/or damage caused by abuse,
+                neglect or accidents are customer's responsibility.
+            </p>
+            <p class="small">
+                The number of scheduled maintenance services
+                provided under the Program is fixed based on the particular
+                Program coverage that you select. Once all maintenance and
+                optional services have been provided, you will not be eligible for
+                additional maintenance services under the Program unless
+                additional services are purchased. Program services must be
+                performed by an authorized Priority Service Maintenance Program
+                dealer. The Program does not cover all parts and services. See an
+                Enrollment Form for details.
+            </p>
+            <!-- END EDIT CONTENT -->
+        </div>
+        <!-- END OF AD CELLS -->
+
+        <!-- FOOTER ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_Footer.cshtml"); }
+        <!-- END OF FOOTER ROW -->
+
+    </div>
+    <!-- END OF MAIN CELL -->
+
+    <div class="span4" id="sidebar">
+        <!-- CONTACT FORM ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_ContactForm.cshtml"); }
+        <!-- END OF CONTACT FORM ROW -->
+
+        <!-- MAP ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_Map.cshtml"); }
+        <!-- END OF MAP ROW -->
+
+        <!-- Dealerinfo ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_DealerInfo.cshtml"); }
+        <!-- END OF Dealerinfo ROW -->
+    </div>
+    <!-- END OF SIDEBAR CELL -->
+</div>
+
+<script type="text/javascript">
+    $("div.mn-specials").addClass("nav-active");
+</script>

@@ -1,0 +1,47 @@
+.help-inline
+{
+    display: block;
+}
+
+#request-a-quote div, #test-drive div
+{
+    float: left;
+    
+    width: 33.33%;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+    #request-a-quote div input, #test-drive div input
+    {
+        width: 175px;
+    }
+
+textarea#options
+{
+    width: 412px !important;
+    height: 75px;
+    display: inline-block;
+}
+
+#financeApply {
+    padding: 8px;
+    width: 150px;
+    color: #FFF;
+    background-color: #ED1E24 !important;
+    -ms-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    -moz-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, .4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    -webkit-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ED1E24), to(#640A0A) ) !important;
+    background-image: -ms-linear-gradient(top, #ED1E24, #640A0A) !important;
+    background: -moz-linear-gradient(top, #ED1E24, #640A0A) !important;
+    -webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed1e24', endColorstr='#640a0a' );
+    -moz-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed1e24', endColorstr='#640a0a' );
+    -o-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed1e24', endColorstr='#640a0a' );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed1e24', endColorstr='#640a0a' );
+}
+
+#financeApply:hover {
+    font-weight: bold;
+}

@@ -1,0 +1,46 @@
+.help-inline {
+	display: block;
+}
+
+#service-appointment div, #parts-order div {
+	float: left;
+	display: inline-block;
+	width: 33.33%;
+	overflow: visible;
+	white-space: nowrap;
+}
+
+#service-appointment div input, #parts-order div input {
+	width: 175px;
+}
+
+textarea#options {
+	width: 412px !important;
+	height: 75px;
+	display: inline-block;
+}
+#ui-datepicker-div, #ui-datepicker-div a {
+	color: black !important;
+}
+.cell {
+	margin-left: 0;
+	height: 315px;
+	overflow: hidden;
+	position: relative;
+}
+.cell-spacer {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.cell .btn {
+	position: absolute;
+	bottom: 5px;
+}
+.cell h3 {
+	text-align: center;
+	border-bottom: red 3px solid;
+	padding-bottom: 2px;
+	margin-top: 4px !important;
+	margin-bottom: 5px !important;
+}

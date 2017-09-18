@@ -1,0 +1,98 @@
+﻿body
+{
+}
+
+@media screen and (max-width: 700px)
+{
+    #brand
+    {
+        display: none;
+    }
+
+    .cellwrap
+    {
+        padding: 0px 0px;
+    }
+
+    #service-department-listing .cell
+    {
+        height: 350px;
+    }
+
+    #sales-team-listing .cell
+    {
+        height: 320px;
+    }
+
+    #value-my-trade div, #truck-locator div, #request-a-quote div, #test-drive div
+    {
+        /* float: left; */
+        float: none !important;
+        width: 90%;
+        display: table;
+        margin: 10px auto;
+    }
+
+        #value-my-trade div input, #truck-locator div input, #request-a-quote div input, #test-drive div input
+        {
+            width: 87% !important;
+            margin-bottom: 2px;
+        }
+
+        #value-my-trade div select, #truck-locator div select, #request-a-quote div select,#test-drive div select
+        {
+            width: 91% !important;
+            margin-bottom: 2px;
+        }
+
+        #value-my-trade div textarea, #truck-locator div textarea, #request-a-quote div textarea, #test-drive div textarea
+        {
+            width: 87% !important;
+            margin-bottom: 2px;
+        }
+
+    legend
+    {
+        text-align: center;
+    }
+
+    .submitLoadingText
+    {
+        display: none !important;
+    }
+
+    .help-inline
+    {
+        display: block;
+        font-size: 12px;
+        margin-bottom: 10px !important;
+    }
+
+    input#form_send,input#financeApply 
+    {
+        float: none !important;
+        clear: both;
+        width: 90% !important;
+        margin: 0px auto;
+        display: block;
+        padding: 12px 8px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    #content
+    {
+        margin-top: 40px !important;
+        height: auto !important;
+    }
+
+    #leoRetailCell1 {
+        height: 220px !important;
+    }
+    #leoRetailCell3 {
+        height: 230px !important;
+    }
+    #leoSiCell4 {
+        height: 280px !important;
+    }
+}

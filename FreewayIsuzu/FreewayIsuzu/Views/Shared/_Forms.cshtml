@@ -1,0 +1,348 @@
+﻿<script src="/Scripts/libraries/jquery.maskedinput.js" type="text/javascript"></script>
+<script src="/Scripts/libraries/DateFormmater.js" type="text/javascript"></script>
+<script src="/Scripts/libraries/jquery.base64.js" type="text/javascript"></script>
+<script type="text/javascript" src="/Scripts/js/pages/pc_forms.js"></script>
+<script type="text/javascript" src="/Scripts/js/pages/responsiveForm.js"></script>
+<link rel="stylesheet" type="text/css" href="/Content/css/forms.css" />
+
+<div id="form-hider" style="display: none">
+    <div id="more-info" style="height: 340px;" class="form-wrap">
+        <h4>
+            Request More Info</h4>
+        <div id="more-info-form">
+            <form id="formSubmit_more_info" method="post">
+            <ul>
+                <li>
+                    <label class="lb-info">
+                        First Name :</label>
+                    <input id="fname_more" class="input-info" type="text" onfocus="if (this.value == 'First Name') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'First Name';" value="First Name" maxlength="125" />
+                    <span class="red"> </span></li>
+                <li>
+                    <label class="lb-info">
+                        Last Name :</label>
+                    <input id="lname_more" class="input-info" type="text" onfocus="if (this.value == 'Last Name') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'Last Name';" value="Last Name" maxlength="125" />
+                    <span class="red"> </span></li>
+                <li>
+                    <label class="lb-info">
+                        Email :</label>
+                    <input id="email_more" class="email_form input-info" type="text" onfocus="if (this.value == 'Email Address') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'Email Address';" value="Email Address" maxlength="125" />
+                    <br />
+                </li>
+                <li>
+                    <label class="lb-info">
+                        Home Phone :</label>
+                    <input id="phone_more" class="input-info mask_phone" type="text" value="999-999-9999" maxlength="125" />
+                    <span class="red"> </span></li>
+                <li style="width: 75%; height: 30px !important">
+                    <label class="lb-info" style="width: 160px; margin-top: 0px;">
+                        Preferred Contact :</label>
+                    <input id="more-email" type="radio" class="test-radio" name="ra-more-contact" checked="checked" />
+                    <label for="more-email" class="more-radio-lb">
+                        Email</label>
+                    <input id="more-phone" type="radio" class="test-radio" name="ra-more-contact" />
+                    <label for="more-phone" class="more-radio-lb">
+                        Phone</label>
+                </li>
+                <li>
+                    <label style="font-size: 20px; width: 150px;" class="lb-info">
+                        Comments :</label>
+                    <textarea name="comments" id="comment_more" onfocus="if (this.value == 'Additional Comments') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'Additional Comments';">Additional Comments</textarea>
+                </li>
+            </ul>
+            <a href="javascript:void(0);">
+                <div id="button-more-info" style="margin-top: 66px;" class="buttons-info">
+                    Request
+                </div>
+            </a>
+            </form>
+        </div>
+    </div>
+    <div id="test-drive" class="form-wrap">
+        <div id="test-drive-listing">
+            <!-- AD CELLS -->
+            <h3>
+                Take a Test Drive!</h3>
+            <div id="test-drive" class="validate form-section">
+                <legend style="border: none; margin-top: 10px;"></legend>
+                <label>
+                    Appointment Date
+                </label>
+                <div class="input-prepend control-group">
+                    <label class="lb-info">
+                        First Name :</label>
+                    <input id="fname_test" name="firstname" class="required" type="text" onfocus="if (this.value == 'First Name') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'First Name';" value="First Name" maxlength="125" />
+                    <span class="red"></span>
+                </div>
+                <div class="input-prepend control-group">
+                    <label class="lb-info">
+                        Last Name :</label>
+                    <input id="lname_test" name="lastname" class="required" type="text" onfocus="if (this.value == 'Last Name') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'Last Name';" value="Last Name" maxlength="125" />
+                    <span class="red"></span>
+                </div>
+                <div class="input-prepend control-group">
+                    <label class="lb-info">
+                        Email :</label>
+                    <input name="email" class="email_form required" id="email_test" type="text" onfocus="if (this.value == 'Email Address') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'Email Address';" value="Email Address" maxlength="125" />
+                    <span class="red"></span>
+                </div>
+                <div class="input-prepend control-group">
+                    <label class="lb-info">
+                        Home Phone :</label>
+                    <input name="phone" class="number required mask_phone" id="phone_test" type="text"
+                        value="999-999-9999" maxlength="125"/>
+                    <span class="red"></span>
+                </div>
+                <div class="input-prepend control-group" id="input-prepend-date">
+                    <label class="lb-info">
+                        Select a Date :</label>
+                    <input type="text" name="date" id="test-date" class="datepicker required" onfocus="if (this.value == 'Date (Ex: mm/dd/yyyy)') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'Date (Ex: mm/dd/yyyy)';" value="Date (Ex: mm/dd/yyyy)" maxlength="125" />
+                    <span class="red"></span>
+                </div>
+                <div class="input-prepend control-group">
+                    <label class="lb-info">
+                        Select a Time :</label>
+                    <input type="text" name="time" id="time" class="required" onfocus="if (this.value == 'Enter a Time (ie. 12:00pm)') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'Enter a Time (ie. 12:00pm)';" value="Enter a Time (ie. 12:00pm)" maxlength="125" />
+                </div>
+                <div class="input-prepend control-group" style="height: 30px;">
+                    <label class="lb-info" style="width: 160px; margin-top: 0px;">
+                        Preferred Contact :</label>
+                    <input id="contact_email_test" type="radio" class="test-radio" name="ra-test-contact"
+                        checked="checked" />
+                    <label for="contact_email_test" class="more-radio-lb">
+                        Email</label>
+                    <input id="contact_phone_test" type="radio" class="test-radio" name="ra-test-contact" />
+                    <label for="contact_phone_test" class="more-radio-lb">
+                        Phone</label>
+                    <span class="red"></span>
+                </div>
+                <label>
+                    Comments
+                </label>
+                <div class="input-prepend control-group">
+                    <textarea name="comments" id="comment_test" onfocus="if (this.value == 'Additional Comments') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'Additional Comments';">Additional Comments</textarea>
+                </div>
+                <a href="javascript:void(0);">
+                    <div id="button-test-info" style="margin-top: 37px;" class="buttons-info">
+                        Take test
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="make-offer" class="form-wrap">
+        <h4>
+            Make An Offer !</h4>
+        <div id="offer-form">
+            <ul>
+                <li>
+                    <label class="lb-info">
+                        First Name :</label>
+                    <input id="fname_offer" class="input-info" type="text" onfocus="if (this.value == 'First Name') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'First Name';" value="First Name" maxlength="125" />
+                    <span class="red"></span></li>
+                <li>
+                    <label class="lb-info">
+                        Last Name :</label>
+                    <input id="lname_offer" class="input-info" type="text" onfocus="if (this.value == 'Last Name') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'Last Name';" value="Last Name" maxlength="125" />
+                    <span class="red"></span></li>
+                <li>
+                    <label class="lb-info">
+                        Email :</label>
+                    <input id="email_offer" class="email_form input-info" type="text" onfocus="if (this.value == 'Email Address') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'Email Address';" value="Email Address" maxlength="125" />
+                    <br />
+                </li>
+                <li>
+                    <label class="lb-info">
+                        Home Phone :</label>
+                    <input id="phone_offer" class="input-info mask_phone" type="text" value="999-999-9999" maxlength="125" />
+                    <span class="red"></span></li>
+                <li style="width: 75%;">
+                    <label class="lb-info">
+                        Your Offer :</label>
+                    <input id="offer_value" class="input-info" type="text" onfocus="if (this.value == 'Offer Value') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'Offer Value';" value="Offer Value" maxlength="15" />
+                    <span class="red"></span></li>
+                <li style="width: 75%; height: 30px !important;">
+                    <label class="lb-info" style="width: 160px; margin-top: 0px;">
+                        Preferred Contact :</label>
+                    <input type="radio" class="test-radio" name="ra-more" checked="checked" id="more-yes" />
+                    <label for="more-yes" class="more-radio-lb">
+                        Email</label>
+                    <input type="radio" class="test-radio" name="ra-more" id="more-no" />
+                    <label for="more-no" class="more-radio-lb">
+                        Phone</label>
+                </li>
+                <li>
+                    <label style="font-size: 20px; width: 150px;" class="lb-info">
+                        Comments :</label>
+                    <textarea name="comments" id="comment_offer" onfocus="if (this.value == 'Additional Comments') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'Additional Comments';">Additional Comments</textarea>
+                </li>
+            </ul>
+            <a href="javascript:void(0);">
+                <div id="button-offer-info" class="buttons-info">
+                    OFFER
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="share-friend" class="form-wrap">
+        <h3>
+            Share With a Friend!</h3>
+        <p>
+            Know someone who may be interested? Send it to them now through email!
+        </p>
+        <div id="share-with-friend" class="validate form-section">
+            <legend style="border: none; margin-top: 10px;"></legend>
+            <!-- Contact Form Include -->
+            <label>
+                Contact Info
+            </label>
+            <div class="input-prepend control-group">
+                <label class="lb-info">
+                    First Name :</label>
+                <input id="fname_share" name="firstname" class="required" type="text" onfocus="if (this.value == 'First Name') this.value = '';"
+                    onblur="if (this.value == '') this.value = 'First Name';" value="First Name" maxlength="125" />
+                <span class="red"></span>
+            </div>
+            <div class="input-prepend control-group">
+                <label class="lb-info">
+                    Last Name :</label>
+                <input id="lname_share" name="lastname" class="required" type="text" onfocus="if (this.value == 'Last Name') this.value = '';"
+                    onblur="if (this.value == '') this.value = 'Last Name';" value="Last Name" maxlength="125" />
+                <span class="red"></span>
+            </div>
+            <div class="input-prepend control-group">
+                <label class="lb-info">
+                    Email :</label>
+                <input id="email_share" name="email" class="email_form required" type="text" onfocus="if (this.value == 'Email Address') this.value = '';"
+                    onblur="if (this.value == '') this.value = 'Email Address';" value="Email Address" maxlength="125" />
+                <span class="red"></span>
+            </div>
+            <div class="input-prepend control-group">
+                <label class="lb-info">
+                    Home Phone :</label>
+                <input id="phone_share" name="phone" class="number required mask_phone" type="text"
+                    value="999-999-9999" maxlength="125" />
+                <span class="red"></span>
+            </div>
+            <div class="input-prepend control-group" style="height: 30px;">
+                <label class="lb-info" style="width: 160px; margin-top: 0px;">
+                    Preferred Contact :</label>
+                <input id="contact_email_share" type="radio" class="share-radio" name="ra-share-contact"
+                    checked="checked" />
+                <label for="contact_email_share" class="more-radio-lb">
+                    Email</label>
+                <input id="contact_phone_share" type="radio" class="share-radio" name="ra-share-contact" />
+                <label for="contact_phone_share" class="more-radio-lb">
+                    Phone</label>
+                <span class="red"></span>
+            </div>
+            <label>
+                <br />
+                Friend's Contact Info
+            </label>
+            <div class="input-prepend control-group">
+                <label class="lb-info">
+                    Friend Name :</label>
+                <input id="friendname" name="friendname" class="required" type="text" onfocus="if (this.value == 'Name of Friend') this.value = '';"
+                    onblur="if (this.value == '') this.value = 'Name of Friend';" value="Name of Friend" maxlength="125" />
+                <span class="red"></span>
+            </div>
+            <div class="input-prepend control-group">
+                <label class="lb-info">
+                    Email :</label>
+                <input id="friend_email" name="friend_email" class="email_form required" type="text" onfocus="if (this.value == 'Mail of Friend') this.value = '';"
+                    onblur="if (this.value == '') this.value = 'Mail of Friend';" value="Mail of Friend" maxlength="125" />
+                <span class="red"></span>
+            </div>
+            <label>
+                Comments
+            </label>
+            <div class="input-prepend control-group icon-white">
+                <span class="add-on"><i class="icon-comment icon-white"></i></span>
+                <textarea name="comments" id="comment_share" onfocus="if (this.value == 'Additional Comments') this.value = '';"
+                    onblur="if (this.value == '') this.value = 'Additional Comments';">Additional Comments</textarea>
+            </div>
+            <a href="javascript:void(0);">
+                <div id="button-share-info" style="margin-top: 35px;" class="buttons-info">
+                    Share It
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="get-quote" style="height: 340px;" class="form-wrap">
+        <h4 style="padding: 0px;">
+            Get A Quote !</h4>
+        <div id="get-quote-form">
+            <ul>
+                <li>
+                    <label class="lb-info">
+                        First Name :</label>
+                    <input id="fname_quote" class="input-info" type="text" onfocus="if (this.value == 'First Name') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'First Name';" value="First Name" maxlength="125" />
+                    <span class="red"></span></li>
+                <li>
+                    <label class="lb-info">
+                        Last Name :</label>
+                    <input id="lname_quote" class="input-info" type="text" onfocus="if (this.value == 'Last Name') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'Last Name';" value="Last Name" maxlength="125" />
+                    <span class="red"></span></li>
+                <li>
+                    <label class="lb-info">
+                        Email :</label>
+                    <input id="email_quote" class="email_form input-info" type="text" onfocus="if (this.value == 'Email Address') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'Email Address';" value="Email Address" maxlength="125" />
+                    <br />
+                </li>
+                <li>
+                    <label class="lb-info">
+                        Home Phone :</label>
+                    <input id="phone_quote" class="input-info mask_phone" type="text" value="999-999-9999" maxlength="125" />
+                    <span class="red"></span></li>
+                <li style="width: 75%; height: 30px !important">
+                    <label class="lb-info" style="width: 160px; margin-top: 0px;">
+                        Preferred Contact :</label>
+                    <input id="more-email-quote" type="radio" class="test-radio" name="ra-get-quote"
+                        checked="checked" />
+                    <label for="more-email-quote" class="more-radio-lb">
+                        Email</label>
+                    <input id="more-phone-quote" type="radio" class="test-radio" name="ra-get-quote" />
+                    <label for="more-phone-quote" class="more-radio-lb">
+                        Phone</label>
+                </li>
+                <li>
+                    <label style="font-size: 20px; width: 150px;" class="lb-info">
+                        Comments :</label>
+                    <textarea name="comments" id="comment_quote" onfocus="if (this.value == 'Additional Comments') this.value = '';"
+                        onblur="if (this.value == '') this.value = 'Additional Comments';">Additional Comments</textarea>
+                </li>
+            </ul>
+            <a href="javascript:void(0);">
+                <div id="button-get-quote" style="margin-top: 66px;" class="buttons-info">
+                    Submit
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var insertCustomerInfoApi = '/Email/InsertCustomerInfo';
+    var insertRequestInfoApi = '/Email/InsertRequestInfo';
+    var insertMakeOfferApi = '/Email/InsertMakeOffer';
+    var insertTestDriveApi = '/Email/InsertTestDrive';
+    var insertShareFriendsApi = '/Email/InsertShareFriends';
+    var insertGetQuoteApi = '/Email/InsertGetQuote';
+</script>

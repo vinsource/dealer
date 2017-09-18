@@ -1,0 +1,178 @@
+﻿body
+{
+}
+
+@media screen and (max-width: 700px)
+{
+
+    .specialsItems
+    {
+        float: none !important;
+        width: 100% !important;
+        height: 195px !important;
+    }
+
+    .spItemKey
+    {
+        width: 58px;
+        font-size: 12px;
+        /* font-weight: bold; */
+    }
+
+    .specialsHeader
+    {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .spOthersItem
+    {
+        height: 20px;
+        margin-top: 0px !important;
+    }
+
+    #brand
+    {
+        display: none;
+    }
+
+    .span7, .span9
+    {
+        width: auto !important;
+    }
+
+    table.image, table.image td
+    {
+        width: 100% !important;
+    }
+
+        table.image, table.image td
+        {
+            font-size: 13px !important;
+        }
+
+    ul.vehicle-info-table li
+    {
+        margin: 5px 0px;
+        font-size: 14px !important;
+    }
+
+    #vehicle-profile h1
+    {
+        font-size: 26px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    #vehicle-profile .price .btn-danger
+    {
+        padding: 8px 0px;
+        margin-right: 10px;
+    }
+
+    p
+    {
+        clear: both;
+    }
+
+    ul
+    {
+        list-style: none;
+        text-align: center;
+        padding: 0px 5px !important;
+        margin-left: 0px !important;
+        line-height: 22px;
+    }
+
+        ul li
+        {
+            line-height: 22px;
+        }
+
+    #vehicle-profile .price
+    {
+        margin-top: 10px;
+    }
+
+
+    .form-wrap h4
+    {
+        font-size: 20px;
+        line-height: 22px;
+        margin: 0px !important;
+    }
+
+    #formSubmit_more_info .lb-info
+    {
+        width: auto !important;
+    }
+
+    .buttons-info
+    {
+        width: 100% !important;
+        margin-top: 16px !important;
+        height: 42px !important;
+        padding-top: 14px !important;
+        padding-bottom: 22px !important;
+    }
+
+    /*form*/
+
+    #more-info, #test-drive, #make-offer, #share-friend, #get-quote
+    {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+        #more-info-form ul li, #test-drive ul li, #make-offer ul li, #share-friend ul li, #get-quote ul li
+        {
+            float: none !important;
+            width: 100% !important;
+            height: 65px !important;
+            margin: 0px !important;
+            margin-bottom: 10px !important;
+        }
+
+
+        #more-info-form input[type="text"], #make-offer input[type="text"], #test-drive input[type="text"],
+        #share-friend input[type="text"], #get-quote input[type="text"]
+        {
+            width: 95% !important;
+            height: 25px !important;
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+        }
+
+    .input-prepend
+    {
+        width: 100% !important;
+    }
+
+        .input-prepend .add-on, .input-append .add-on
+        {
+            display: none;
+        }
+
+    #make-offer textarea, #test-drive textarea, #more-info-form textarea, #share-friend textarea, #get-quote textarea
+    {
+        width: 95% !important;
+        height: 35px !important;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    #form-hider .form-wrap
+    {
+        display: none;
+    }
+
+    .leoResponsiveBtns
+    {
+        display: block !important;
+    }
+
+    .leoNoResponsiveBtns
+    {
+        display: none !important;
+    }
+}

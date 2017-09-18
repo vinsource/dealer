@@ -1,0 +1,81 @@
+.lease_text
+{
+    float: left;
+    width: 56%;
+}
+
+.lease_it
+{
+    clear: both;
+}
+
+.lease_img
+{
+    width: 35%;
+    float: right;
+}
+
+h2
+{
+    clear: both !important;
+}
+
+.specialsItems
+{
+    -webkit-box-shadow: 1px 1px 1px gray;
+    -ms-box-shadow: 1px 1px 1px gray;
+    box-shadow: 1px 1px 1px gray;
+    width: 48%;
+    background-color: #EEE;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 20px;
+    height: 216px;
+}
+
+.specialsImg
+{
+    width: 40%;
+    float: left;
+    margin-right: 5px;
+}
+
+.specialsInfo
+{
+    float: right;
+    width: 57%;
+}
+
+.specialsItems:hover
+{
+    background-color: #FAFAFA;
+}
+
+.specialsHeader
+{
+    color: #F00 !important;
+    font-size: 22px;
+    max-height: 59px;
+    overflow: hidden;
+}
+
+.spOthersItem
+{
+    color: black;
+    height: 20px;
+    clear: both;
+    margin-top: 5px;
+}
+
+.spItemKey
+{
+    float: left;
+    width: 110px;
+    font-weight: bold;
+}
+
+.spItemValue
+{
+    float: left;
+    font-size: 13px;
+}

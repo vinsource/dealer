@@ -1,0 +1,193 @@
+﻿body
+{
+}
+
+@media screen and (max-width: 700px)
+{
+    #detail-left
+    {
+        margin-right: 0px !important;
+        width: 100% !important;
+        height: 100%;
+        float: none !important;
+    }
+
+    #detail-right
+    {
+        margin-left: 0px !important;
+        width: 100%!important;
+        height: 100%;
+        float: none !important;
+    }
+
+    table.imageMid, table.imageMid td
+    {
+        height: auto !important;
+    }
+
+    #detail-right-top
+    {
+        width: 100%;
+    }
+
+    #detail-right-middle
+    {
+        width: 100%;
+    }
+
+    #dt-middle-content
+    {
+        width: 100% !important;
+    }
+
+    #carfaxWrap
+    {
+        display: none;
+    }
+
+    #dt-middle-content
+    {
+        height: auto;
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    #carfax h4
+    {
+        font-size: 25px;
+        margin: 7px 0px !important;
+        text-align: left;
+    }
+
+    .carfax-top
+    {
+        font-size: 13px;
+        padding-left: 10px;
+    }
+
+        .carfax-top > div
+        {
+            margin-right: 10px;
+        }
+
+    #dt-middle-menu li a
+    {
+        font-size: 14px;
+    }
+
+    #right-top-right input[type="button"]
+    {
+        padding: 10px 0px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #right-top-left ul.unstyled
+    {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    #keywords
+    {
+        height: auto;
+    }
+
+    .noImgSimilar
+    {
+        height: auto !important;
+    }
+
+    #right-top-left li
+    {
+        margin-top: 5px;
+        float: left;
+        width: 48%;
+        text-align: left;
+        padding-left: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .tradein-button
+    {
+        clear: both;
+    }
+
+        .tradein-button img
+        {
+            width: 100%;
+        }
+
+    #brand
+    {
+        display: block;
+    }
+
+    #similar_type label
+    {
+        float: left;
+        width: 32% !important;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    table.imageMid, table.imageMid td
+    {
+        width: 100% !important;
+    }
+
+    #similar_type
+    {
+        padding: 0px 15px;
+        width: 100% !important;
+    }
+
+    #right-top-left
+    {
+        width: 100%;
+        height: 180px;
+        float: none;
+    }
+
+    .span3
+    {
+        width: 100% !important;
+    }
+
+    #similar
+    {
+        margin-left: 0px !important;
+    }
+
+    #footer
+    {
+        margin-left: 0px !important;
+    }
+
+    #right-top-right
+    {
+        width: 100%;
+        height: 100%;
+        float: none;
+        clear: both;
+        margin-top: 10px;
+    }
+
+        #right-top-right h2
+        {
+            text-align: center;
+        }
+
+
+    #main-image img
+    {
+        width: 100% !important;
+    }
+
+
+    #main-image
+    {
+        width: 100% !important;
+    }
+}

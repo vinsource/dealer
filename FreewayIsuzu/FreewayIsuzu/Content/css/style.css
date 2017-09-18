@@ -1,0 +1,1070 @@
+/* for ie 8 */
+
+.arrow-holder
+{
+    z-index: 1000;
+    content: '';
+    display: none;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid white;
+    position: relative;
+}
+
+.clear
+{
+    clear: both;
+}
+
+#tertiary-form > fieldset > div.submitLoadding
+{
+    display: none;
+    color: #008000;
+    background-color: #FFF;
+    padding: 3px;
+    font-size: 12px;
+    margin-bottom: 2px;
+    font-style: italic;
+    font-weight: bold;
+    position: relative;
+    top: -7px;
+}
+
+#truckIcon
+{
+    margin: 17px 15px 0px;
+    width: 60px;
+    height: 60px;
+    float: left;
+    background-size: 100%;
+    background-image: url("/Content/images/Isuzu_Truck_Logo.jpg");
+}
+
+#submitFormLoading
+{
+    height: 15px;
+    width: 100% !important;
+    float: none !important;
+    display: none;
+    color: #008000;
+    background-color: #FFF;
+    padding: 3px;
+    font-size: 12px;
+    margin-bottom: 2px;
+    font-style: italic;
+    font-weight: bold;
+    position: relative;
+    top: -7px;
+}
+
+#send
+{
+    width: 100px;
+    padding: 8px;
+    color: #FFF;
+    background-color: #ED1E24 !important;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    -moz-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, .4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    -webkit-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ED1E24), to(#640A0A) ) !important;
+    background-image: -ms-linear-gradient(top, #ED1E24, #640A0A) !important;
+    background: -moz-linear-gradient(top, #ED1E24, #640A0A) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed1e24', endColorstr='#640a0a' );
+}
+
+    #send:hover
+    {
+        font-weight: bold;
+    }
+
+.nocars
+{
+    background-color: #EEE;
+    padding: 20px;
+    width: 90%;
+    margin-top: 10px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: ar;
+    box-shadow: 1px 2px 3px #DDD;
+}
+
+#form_send
+{
+    width: 100px;
+    padding: 8px;
+    color: #FFF;
+    background-color: #ED1E24 !important;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    -moz-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, .4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    -webkit-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ED1E24), to(#640A0A) ) !important;
+    background-image: -ms-linear-gradient(top, #ED1E24, #640A0A) !important;
+    background: -moz-linear-gradient(top, #ED1E24, #640A0A) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed1e24', endColorstr='#640a0a' );
+}
+
+    #form_send:hover
+    {
+        font-weight: bold;
+    }
+
+div.submitLoadding
+{
+    height: 15px;
+    width: 100% !important;
+    float: none !important;
+    display: none;
+    color: #008000;
+    background-color: #FFF;
+    padding: 3px;
+    font-size: 12px;
+    margin-bottom: 2px;
+    font-style: italic;
+    font-weight: bold;
+    position: relative;
+    top: -7px;
+}
+
+.ie .menu-holder
+{
+    margin-top: -5px;
+}
+
+.ie8 .menu-holder
+{
+    margin-top: -3px !important;
+}
+
+.hasMenu a
+{
+    cursor: pointer;
+}
+
+.nav-active
+{
+    background-color: #222 !important;
+}
+
+.caret
+{
+    margin-top: 7px;
+    margin-left: 2px;
+}
+
+.menu-items:hover
+{
+}
+
+.menu-holder-links
+{
+    padding: 5px;
+    color: #333 !important;
+    display: block;
+    width: 94%;
+    height: 18px;
+}
+
+    .menu-holder-links:hover
+    {
+        background-color: #999999;
+    }
+
+.menu-holder
+{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 6px !important;
+    width: 180px;
+    display: none;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    margin-left: -11px;
+    z-index: 100;
+    margin-top: -4px;
+    background-color: white;
+    position: absolute;
+}
+
+.menu-items a:hover
+{
+    text-decoration: none;
+}
+
+.menu-items
+{
+    font-weight: bold;
+    float: left;
+    height: 17px;
+    padding: 11px;
+}
+
+#menu-holder
+{
+    margin-left: -7px;
+    height: 40px;
+    width: 952px;
+    background-color: #ED1E24 !important;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, .4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    -moz-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, .4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    -webkit-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, .4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ED1E24), to(#640A0A) ) !important;
+    /* IE 10+ */
+    background-image: -ms-linear-gradient(top, #ED1E24, #640A0A) !important;
+    background: -moz-linear-gradient(top, #ED1E24, #640A0A) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed1e24', endColorstr='#640a0a' );
+}
+
+.ie8 ul.nav
+{
+    margin-top: -13px !important;
+}
+
+/* end for ie 8 */
+#spanFooter
+{
+    width: 98% !important;
+}
+
+.span12
+{
+    margin-left: 4px;
+}
+
+.hasPlaceholder
+{
+    color: #777;
+}
+
+#sidebar
+{
+    margin-bottom: 65px;
+}
+
+.navbar
+{
+    margin: 0;
+}
+
+#value-my-trade legend
+{
+    margin-bottom: 10px;
+}
+
+div
+{
+    -ms-border-radius: 0px !important;
+    border-radius: 0px !important;
+}
+
+    #slider, div.cell, #facebook, #navBG, #footer, #social, #filter
+    {
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, .7) !important;
+        -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, .7) !important;
+        -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, .7) !important;
+    }
+
+#wrapper
+{
+}
+
+#dealerInfo
+{
+    padding: 4px;
+    background-color: #EEE;
+}
+
+    #dealerInfo > h4
+    {
+        font-size: 17px;
+        margin: 5px 0px;
+    }
+
+    #dealerInfo > ul > li
+    {
+        line-height: 22px;
+        color: #28E;
+        font-weight: bold;
+    }
+/* FORM VALIDATION STYLING */
+.success
+{
+    background: none !important;
+    -ms-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+    .success:hover
+    {
+        background: none !important;
+    }
+
+h1, h2, h3
+{
+    color: #ffffff !important;
+}
+
+body
+{
+    background: url('/Content/images/bgRepeat.jpg') top left repeat-x;
+}
+
+#wrapper
+{
+}
+
+a
+{
+    color: #ffffff !important;
+}
+
+.active a
+{
+    color: white !important;
+}
+
+#brand
+{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1em;
+    background: #000;
+}
+
+/* IMAGE RESIZING CSS */
+table, td, tr
+{
+    table-layout: fixed;
+    overflow: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+    table.image, table.image td
+    {
+        overflow: hidden;
+        width: 400px !important;
+        height: 310px !important;
+        background: #222 !important;
+    }
+
+    table.imageMid, table.imageMid td
+    {
+        overflow: hidden;
+        width: 162px !important;
+        height: 120px !important;
+        background: #222 !important;
+    }
+
+    table.imageSml, table.imageSml td
+    {
+        width: 88px !important;
+        height: 65px !important;
+        background: #222 !important;
+    }
+
+        table.image img, table.imageMid img, table.imageSml img
+        {
+            display: block;
+            margin: 0 auto;
+            max-width: 100% !important;
+            max-height: 100% !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+​ /* HEADER */
+#phone
+{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+#facebookH
+{
+    margin-top: 5px;
+}
+
+    #facebookH img
+    {
+        position: relative;
+        top: 3px;
+    }
+
+#address address
+{
+    margin: 0px 20px 5px 0px;
+    text-align: right;
+}
+
+#banner
+{
+    margin-top: 3px;
+    height: 85px;
+    margin-bottom: 0;
+    background: none;
+    color: #FFF;
+    position: relative;
+    padding: 0px;
+}
+
+    #banner #h1Wrap
+    {
+        background: url('/Content/images/newlogo.png') top left no-repeat;
+        width: 200px;
+        height: 85px;
+        float: left;
+    }
+
+    #banner h1
+    {
+        color: #ffffff;
+        display: none;
+    }
+
+#banSlideWrap
+{
+    height: 70px !important;
+    width: 500px;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+}
+
+#bannerSlider div
+{
+    width: 500px;
+    height: 70px;
+}
+
+/* NAVIGATION */
+#navBG
+{
+    width: 952px;
+    background-color: #ed1e24 !important;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, .4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    -moz-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, .4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    -webkit-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, .4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ed1e24), to(#640a0a) ) !important;
+    background: -moz-linear-gradient(top, #ed1e24, #640a0a) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed1e24', endColorstr='#640a0a' );
+}
+
+ul. a
+{
+    font-weight: bolder !important;
+    font-size: 1em;
+    padding-bottom: 8px;
+}
+
+ul.dropdown-menu
+{
+    margin-top: -3px;
+}
+
+ul.dropdown-menu
+{
+    background: #ffffff !important;
+}
+
+    ul.dropdown-menu a
+    {
+        color: #333333 !important;
+    }
+
+        ul.dropdown-menu a:hover
+        {
+            background: #999999 !important;
+        }
+
+/* MAIN CONTENT */
+#content
+{
+    margin-top: 10px;
+}
+
+#slider
+{
+    width: 100%;
+    height: 300px;
+    background: #222;
+}
+
+#slider1 div h1
+{
+    text-align: center;
+    width: 460px;
+    border-radius: 0px 5px 0px 0px !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5) !important;
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5) !important;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5) !important;
+    opacity: .9;
+    font-weight: bold;
+    font-size: 2.1em;
+    background: #640a0a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 4px;
+    padding-left: 8px;
+}
+
+#social
+{
+    overflow: hidden;
+    height: 735px;
+    background: none;
+    background-color: #ffffff !important;
+}
+
+#featured
+{
+    height: 155px;
+    background: none;
+    margin-top: 10px;
+}
+
+div.cellwrap
+{
+    position: absolute;
+    width: 220px;
+    top: 5px;
+    left: 5px;
+    bottom: 0px;
+}
+
+.cell .btn, #tertiary-cell .btn
+{
+    width: 200px;
+    height: 20px;
+    margin-bottom: 1px;
+    background: #333333 !important;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, .4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    -moz-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, .4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    -webkit-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, .4), inset 0px 16px 0px rgba(255, 255, 255, 0.05) !important;
+    border-radius: 4px !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#111111) ) !important;
+    background: -moz-linear-gradient(top, #333333, #111111) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#111111' ) !important;
+    padding-top: 6px !important;
+}
+
+    .cell .btn:hover, #tertiary-cell .btn:hover
+    {
+        background: #555555 !important;
+        box-shadow: inset 0px 15px 0px rgba(255, 255, 255, 0.05) !important;
+        -moz-box-shadow: inset 0px 15px 0px rgba(255, 255, 255, 0.05) !important;
+        -webkit-box-shadow: inset 0px 15px 0px rgba(255, 255, 255, 0.05) !important;
+        background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#555555) ) !important;
+        background: -moz-linear-gradient(top, #333333, #555555) !important;
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#555555' ) !important;
+    }
+
+.cell .more
+{
+    width: auto;
+    position: absolute;
+    bottom: 7px;
+    right: 0px;
+}
+
+.cell
+{
+    position: relative;
+    height: 180px;
+    color: #111111 !important;
+    margin-top: 10px;
+    background: #555555;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 1);
+    background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#eeeeee) ) !important;
+    background: -moz-linear-gradient(top, #eeeeee, #eeeeee) !important;
+    /* IE 10+ */
+    background: -ms-linear-gradient(top, #eeeeee, #eeeeee);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, #eeeeee, #eeeeee);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#eeeeee' );
+}
+
+    .cell li
+    {
+        margin-bottom: 4px;
+    }
+
+    .cell h3
+    {
+        color: #111111 !important;
+    }
+
+#dealer-info h3, #dealer-info p
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#dealer-info h3
+{
+    margin-top: 20px;
+}
+
+/* FOOTER */
+#footer
+{
+    margin-top: 10px;
+    color: #ffffff !important;
+    text-align: center;
+    background: #640a0a;
+    margin-bottom: 100px;
+    width: 100% !important;
+    height: 45px;
+}
+
+#footer-wrap
+{
+    padding: 15px;
+}
+
+/* --------------------- */
+/* INVENTORY LISTING CSS */
+/* --------------------- */
+#inventory .listing-container
+{
+    border-bottom: 4px solid #ddd;
+    height: 150px;
+}
+
+#inventory h3
+{
+    color: #ed1e24 !important;
+}
+
+#inventory .listing-container
+{
+    margin-bottom: 10px;
+}
+
+#inventory .img a
+{
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .4) !important;
+    -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, .4) !important;
+    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, .4) !important;
+}
+
+#inventory .img
+{
+    max-width: 100%;
+}
+
+#inventory
+{
+    color: black;
+}
+
+    #inventory img a
+    {
+        overflow: hidden;
+    }
+
+    #inventory a
+    {
+        color: #ed1e24 !important;
+    }
+
+    #inventory div
+    {
+        display: inline-block;
+    }
+
+    #inventory .price
+    {
+        text-align: right;
+    }
+
+    #inventory h2
+    {
+        font-size: 2.5em !important;
+        margin-bottom: 5px;
+        color: green !important;
+    }
+
+#filter
+{
+    background: #333;
+}
+
+    #filter #filterForm
+    {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    #filter #filter-inner-wrap
+    {
+        margin: 5px;
+    }
+
+/* ------------------- */
+/* VEHICLE PROFILE CSS */
+/* ------------------- */
+#vehicle-profile .nav-tabs a
+{
+    color: #333333 !important;
+    margin-bottom: 0 !important;
+}
+
+    #vehicle-profile .nav-tabs a:hover
+    {
+        background: #333333;
+        color: #ffffff !important;
+    }
+
+#vehicle-profile .nav-tabs .active a
+{
+    background: #333333;
+    color: #ffffff !important;
+}
+
+#vehicle-profile .tab-content
+{
+    background: #333333 !important;
+    color: #333333 !important;
+    margin-top: -16px;
+}
+
+#vehicle-profile .tab-pane
+{
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+
+    #vehicle-profile .tab-pane .well
+    {
+        margin: 10px !important;
+        overflow: auto;
+        height: 250px;
+    }
+
+#vehicle-profile a.thumbnail
+{
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .4) !important;
+    -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, .4) !important;
+    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, .4) !important;
+    margin-bottom: 5px;
+}
+
+#vehicle-profile
+{
+    padding-top: 8px;
+    color: black;
+}
+
+    #vehicle-profile .price
+    {
+        text-align: right;
+    }
+
+        #vehicle-profile .price .btn-danger
+        {
+            width: 100%;
+            float: right;
+            margin-bottom: 5px;
+            background: #640a0a !important;
+            color: #ffffff !important;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, .7) !important;
+            -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, .7) !important;
+            -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, .7) !important;
+        }
+
+            #vehicle-profile .price .btn-danger:hover
+            {
+                background: #ed1e24 !important;
+            }
+
+    #vehicle-profile .carousel a.thumbnail
+    {
+        width: 21% !important;
+        display: inline-block;
+        margin-right: 4px !important;
+    }
+
+    #vehicle-profile #similar .SimWrap
+    {
+        margin: 8px;
+    }
+
+    #vehicle-profile #similar
+    {
+        margin-top: 8px;
+        background: #eeeeee;
+    }
+
+        #vehicle-profile #similar #listing-container2
+        {
+            margin-right: 0 !important;
+        }
+
+    #vehicle-profile h2
+    {
+        font-size: 2.5em !important;
+        margin-bottom: 5px;
+        color: green !important;
+    }
+
+    #vehicle-profile h1
+    {
+        color: #ed1e24 !important;
+    }
+
+    #vehicle-profile #similar .well
+    {
+        padding: 10px !important;
+    }
+
+#carfax
+{
+    position: relative;
+}
+
+    #carfax h2
+    {
+        color: #111111 !important;
+    }
+
+#carfaxBTN
+{
+    color: #333333 !important;
+}
+
+.carousel-control
+{
+    overflow: hidden;
+    height: 15px;
+    width: 25px;
+}
+
+.menu-items:hover
+{
+    background-color: #590809;
+    cursor: pointer;
+}
+
+/* -------------- */
+/* TERTIARY PAGES */
+/* -------------- */
+#lease-specials img
+{
+    float: right;
+    width: 300px;
+    margin: 10px;
+}
+
+textarea
+{
+    -moz-resize: none;
+    -ms-resize: none;
+    -o-resize: none;
+    resize: none;
+}
+
+#tertiary-contact
+{
+    background: #555555 !important;
+}
+
+    #tertiary-contact legend
+    {
+        color: #FFFFFF;
+    }
+
+#tertiary-contact-wrapper
+{
+    margin: 10px;
+}
+
+#tertiary-contact input
+{
+    width: 175px;
+}
+
+#tertiary-contact-wrapper textarea
+{
+    -moz-resize: none;
+    -ms-resize: none;
+    -o-resize: none;
+    resize: none;
+    width: 202px;
+}
+
+#tertiary-contact-wrapper input[type="submit"]
+{
+    width: 212px;
+}
+
+#tertiary-cell ul
+{
+    padding-left: 15px;
+}
+
+    #tertiary-cell ul .inner-list
+    {
+        margin-left: 5px;
+        list-style-type: square;
+    }
+
+#tertiary-cell .list-wrap
+{
+    padding-left: 1%;
+    padding-top: 0;
+    margin-right: 1%;
+    margin-top: 1%;
+    width: 48%;
+    display: inline-block;
+    float: left;
+}
+
+.leoResponsiveBtns
+{
+    display: none !important;
+}
+
+#tertiary-cell img.thumbnail
+{
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .5) !important;
+    -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, .5) !important;
+    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, .5) !important;
+}
+
+#tertiary-cell .list-wrap h4
+{
+    margin-top: 4px;
+}
+.leoNoResponsiveBtns {
+    float: right !important;
+}
+#tertiary-cell .list-wrap .unstyle ul
+{
+    margin-left: 10px;
+}
+
+#tertiary-cell .list-wrap a
+{
+    color: #ed1e24 !important;
+    font-weight: bold;
+}
+
+#tertiary-cell, #tertiary-cell p, #tertiary-cell ul
+{
+    color: #333333;
+}
+
+    #tertiary-cell h1
+    {
+        color: #ed1e24 !important;
+    }
+
+    #tertiary-cell h2, #tertiary-cell h3
+    {
+        color: #333333 !important;
+    }
+
+    #tertiary-cell h3
+    {
+        margin-top: 10px;
+    }
+
+#sales-team-listing
+{
+    margin-left: 0;
+}
+
+#dealerInfo ul
+{
+    color: #111111 !important;
+}
+
+#tertiary-cell .success
+{
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled= false );
+}
+
+.ui-widget-content a
+{
+    color: #222 !important /*{fcContent}*/;
+}
+
+div#resSuccessContent
+{
+    width: 200px;
+    margin: 0px auto;
+    text-align: center;
+    position: relative;
+    top: 40%;
+    background-color: #008000;
+    padding: 80px 0px;
+    color: #FFF;
+    font-size: 37px;
+}
+
+div#resSuccess
+{
+    z-index: 10000;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background-color: #555;
+    opacity: 0.8;
+}
+
+#resTopPhone {
+    display: none;
+	font-size: 24px;
+}
+
+#resBackToTop {
+    display: none;
+    background-image: url("/Content/images/arrow-up.png");
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    z-index: 100000;
+}
+
+#resMenuHolder {
+    top: 0px;
+    z-index: 10000;
+    width: 0px;
+    position: fixed;
+    height: auto;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid gray;
+    border-left: 0px;
+    height: 100%;
+    background-color: #640A0A;
+}
+
+#resTopMenus {
+    display: none;
+}
+
+#resOverlay {
+    display: none;
+}

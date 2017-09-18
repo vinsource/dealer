@@ -1,0 +1,100 @@
+﻿body
+{
+}
+
+@media screen and (max-width: 700px)
+{
+    #inventory div
+    {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    #content
+    {
+        margin-top: 40px;
+    }
+
+    div
+    {
+        float: none;
+    }
+
+    #tertiary-cell .list-wrap
+    {
+        width: 100% !important;
+        clear: both;
+    }
+
+        #tertiary-cell .list-wrap h4
+        {
+            text-align: left;
+        }
+
+    #lease-specials img
+    {
+        float: none;
+        width: 99%;
+        margin: 0px auto !important;
+        padding: 0px !important;
+    }
+
+    .lease_img
+    {
+        width: 100%;
+        float: none !important;
+    }
+
+    #tertiary-cell ul
+    {
+        padding-left: 0px !important;
+        list-style: none;
+        margin-left: 5px;
+        text-align: center;
+    }
+
+        #tertiary-cell ul li span
+        {
+            font-style: normal !important;
+        }
+
+    .lease_text
+    {
+        margin-top: 10px;
+        float: none !important;
+        width: 99%;
+    }
+
+    .specialsItems
+    {
+        float: none !important;
+        width: 100% !important;
+        height: 195px !important;
+    }
+
+    .spItemKey
+    {
+        width: 58px;
+        font-size: 12px;
+        /* font-weight: bold; */
+    }
+
+    .specialsHeader
+    {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .spOthersItem
+    {
+        height: 20px;
+        margin-top: 0px !important;
+    }
+
+    #form-hider {
+        display: block !important;
+    }
+    #lease-specials h4 {
+        text-align: center !important;
+    }
+}

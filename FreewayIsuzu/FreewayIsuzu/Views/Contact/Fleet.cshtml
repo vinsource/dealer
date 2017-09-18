@@ -1,0 +1,103 @@
+﻿@{
+    ViewBag.Title = "Fleet";
+}
+
+@section meta{
+    <meta name="description" content="Freeway Isuzu - Fleet ✓ Finding your used trucks ✓ new trucks ✓ Hundreds of cars for sale ✓ Good prices ✓ Daily updated" />
+}
+
+<style>
+    #dealerInfo {
+        padding: 5px;
+        background-color: #EEE;
+    }
+
+        #dealerInfo > h4 {
+            font-size: 18px;
+            margin: 10px 0px;
+        }
+
+        #dealerInfo > ul > li {
+            line-height: 26px;
+            font-size: 17px;
+            color: #28E;
+            font-weight: bold;
+        }
+
+            #dealerInfo > ul > li > div {
+                width: 90px !important;
+            }
+
+    #feetImgHolder {
+        height: 254px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+        #feetImgHolder img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
+</style>
+<link type="text/css" rel="stylesheet" href="/Content/css/responsive.css" />
+<div class="row" id="content">
+
+    <div class="span12 feetTeritiary" id="tertiary-cell">
+        <div class="span12" id="sales-team-listing">
+            <!-- AD CELLS -->
+            <h1 id="feetH1">Fleet</h1>
+
+            <div id="feetImgHolder" style="">
+                <img src="/Content/images/fleet.jpg" style="" alt="Fleet">
+            </div>
+            <h3 style="color: #333 !important">If You Need 2 or More Trucks For Your Fleet, <em>Freeway Isuzu</em> Meets Your Needs!</h3>
+            <p>
+                We carry the largest selection of Isuzu commercial trucks in the Western Unites States, so you can build your fleet the way you want it. Here at Freeway Isuzu, we pride ourselves on the buying power our commercial fleet customers have when shopping for matched quality, specifications and services. We are unmatched for availability and the optional equipment that makes your company so special in its industry.
+            </p>
+            <p>
+                Call us today to find out how we can make your business stand above the rest.
+            </p>
+            <!-- Dealerinfo ROW -->
+            @{ Html.RenderPartial("~/Views/Shared/_DealerInfo.cshtml"); }
+            <!-- END OF Dealerinfo ROW -->
+        </div>
+
+        <!-- FOOTER ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_Footer.cshtml"); }
+        <!-- END OF FOOTER ROW -->
+
+    </div>
+    <!-- END OF MAIN CELL -->
+    <div class="span4" id="sidebar">
+        <!-- SIDEBAR CELL -->
+
+        <div class="row">
+            <!-- SOCIAL MEDIA ROW -->
+            <div class="span4" id="sidebar">
+                <!-- CONTACT FORM ROW -->
+                @{ Html.RenderPartial("~/Views/Shared/_ContactForm.cshtml"); }
+                <!-- END OF CONTACT FORM ROW -->
+                <!-- MAP ROW -->
+                @{ Html.RenderPartial("~/Views/Shared/_Map.cshtml"); }
+                <!-- END OF MAP ROW -->
+
+
+            </div>
+        </div>
+        <!-- END OF SOCIAL MEDIA ROW -->
+        <!-- FEATURED VEHICLE ROW -->
+        <!-- <div class="row">
+                    <div class="span4" id="featured">
+                    <p>Year Make Model</p>
+                    </div>
+                    </div> -->
+        <!-- END OF FEATURED ROW -->
+
+    </div>
+    <!-- END OF SIDEBAR CELL -->
+</div>
+<script type="text/javascript">
+    $("div.mn-fleet").addClass("nav-active");
+</script>

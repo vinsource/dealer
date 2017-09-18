@@ -1,0 +1,105 @@
+﻿@{
+    ViewBag.Title = "Service Info";
+}
+
+@section meta{
+    <meta name="description" content="Freeway Isuzu - Service info ✓ Finding your used trucks ✓ new trucks ✓ Hundreds of cars for sale ✓ Good prices ✓ Daily updated" />
+}
+
+<link type="text/css" rel="stylesheet" href="/Content/css/retail.css" />
+<link type="text/css" rel="stylesheet" href="/Content/css/responsive.css" />
+<link type="text/css" rel="stylesheet" href="/Content/css/serviceInfoResponsive.css" />
+<div class="row specials" id="content" style="height: 800px;">
+
+    <div class="span12" id="tertiary-cell">
+        <!-- MAIN COLUMN CELL -->
+        <!-- BEGIN EDIT CONTENT -->
+
+        <div class="" id="service-department-listing">
+            <!-- AD CELLS -->
+            <h1 id="feetH1">Service Department</h1>
+            <div id="feetImgHolder">
+                <img src="/Content/images/service.jpg" alt="Service Department">
+            </div>
+            <div class="span4 cell">
+                <div class="cellwrap">
+                    <h3>Service Department</h3>
+                    <!-- <p>Our factory trained technicians handle repairs on all makes and models of commercial Isuzu trucks as well as our pre-owned inventory. Get in contact with us today and schedule your service!</p>
+                                -->
+                    <!-- <h3>Budget Truck Rental</h3> -->
+                    <h4>We Now Offer FREE Truck Rental With Any Major Service!</h4>
+                    <p>
+                        Budget Truck Rental is one of the leading consumer truck
+                        rental companies in the United States, operating through a
+                        network of approximately 2,300 corporate owned, dealer and
+                        franchised locations throughout the continental United States,
+                        serving both the consumer and light commercial sectors. Budget
+                        Rent A Car System Inc. operates both Budget Truck Rental and
+                        Budget Rent A Car and is a wholly owned subsidiary of Avis
+                        Budget Group, Inc.(NASDAQ: CAR).
+                    </p>
+                </div>
+            </div>
+            <div class="span4 cell cell-spacer">
+                <div class="cellwrap">
+                    <h3>Service Specials</h3>
+                    <h4>Priority Service and Maintenance Program</h4>
+                    <p>
+                        Isuzu's Priority Service Maintenance Program provides
+                        manufacturer approved scheduled maintenance.
+                    </p>
+                    <h4>Eligible Vehicles</h4>
+                    <p>
+                        All 2008 N/F-Series and newer Diesel and Gas model
+                        vehicles distributed by Isuzu Commercial Truck of America, Inc.,
+                        subject to utilization and mileage guidelines after submission
+                        and approval by Isuzu.
+                    </p>
+                    <a class="btn success" href="@Url.Action("Service","Specials")">
+                        View Our
+                        Specials!
+                    </a>
+                </div>
+            </div>
+            <div class="span4 cell" id="leoSiCell4">
+                <div class="cellwrap">
+                    <h3>Schedule Appointment</h3>
+                    <p>
+                        It has never been easier to schedule service for your
+                        Commercial Truck than it is here at Freeway Isuzu! We provide
+                        the highest level of service in the industry.
+                    </p>
+                    <p>
+                        We take great care to ensure the work is done right the
+                        first time so you can spend more time running your business!
+                    </p>
+                    <a class="btn success" href="@Url.Action("Appointment","ServiceParts")">
+                        Schedule
+                        Appointment Now!
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- END OF AD CELLS -->
+        <!-- FOOTER ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_Footer.cshtml"); }
+        <!-- END OF FOOTER ROW -->
+
+    </div>
+    <!-- END OF MAIN CELL -->
+    <div class="span4" id="sidebar">
+        <!-- CONTACT FORM ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_ContactForm.cshtml"); }
+        <!-- END OF CONTACT FORM ROW -->
+        <!-- MAP ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_Map.cshtml"); }
+        <!-- END OF MAP ROW -->
+        <!-- Dealerinfo ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_DealerInfo.cshtml"); }
+        <!-- END OF Dealerinfo ROW -->
+    </div>
+    <!-- END OF SIDEBAR CELL -->
+</div>
+<script type="text/javascript">
+    $("div.mn-service-part").addClass("nav-active");
+</script>

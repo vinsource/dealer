@@ -1,0 +1,191 @@
+﻿@{
+    var title = ((string) ViewData["CARTITLE"]);
+    if (title.Length > 30) { title = title.Substring(0, 30) + " " + new Random().Next(9); }
+    ViewBag.Title = title;
+}
+
+@section meta{
+    
+    <meta name="description" content="Freeway Isuzu - @((string) ViewData["CARTITLE"]) ✓ Finding your used trucks ✓ new trucks ✓ Good prices" />
+}
+
+<link type="text/css" rel="stylesheet" href="/Content/css/detail.css" />
+<link type="text/css" rel="stylesheet" href="/Content/css/responsive.css" />
+<link type="text/css" rel="stylesheet" href="/Content/css/responsiveShowroom.css" />
+<link type="text/css" rel="stylesheet" href="/Content/css/responsiveSpecials.css" />
+<link type="text/css" rel="stylesheet" href="/Content/css/responsiveDetails.css" />
+<script src="/Scripts/js/pages/pc_detail.js" type="text/javascript"></script>
+<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+<div id="detail-container" class="row">
+    <div id="detail-left">
+        <div id="holder-slide-images">
+            <div class="slide-images"></div>
+        </div>
+        <div id="carousel-nav">
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev"><i class="icon-chevron-left icon-white"></i></a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next"><i class="icon-chevron-right icon-white"></i></a>
+        </div>
+        <div style="margin-top: 4px;">
+            <div id="carfax">
+                <div class="carfax-top" style="position: relative; color: black; padding-bottom: 4px; background-color: #EEEEEE"></div>
+
+                <div id="carfaxWrap">
+                    <ul style="list-style-type: none; margin-left: 0px;">
+                        <li>
+                            <img alt="No Total Loss Reported to CARFAX" src="http://www.carfaxonline.com/phoenix/img/checkmark.jpg" />
+                            No Total Loss Reported to CARFAX
+                        </li>
+                        <li>
+                            <img alt="No Structural/Frame Damage Reported to CARFAX" src="http://www.carfaxonline.com/phoenix/img/checkmark.jpg" />
+                            No Structural/Frame Damage Reported to CARFAX
+                        </li>
+                        <li>
+                            <img alt="No Airbag Deployment Reported to CARFAX" src="http://www.carfaxonline.com/phoenix/img/checkmark.jpg" />
+                            No Airbag Deployment Reported to CARFAX
+                        </li>
+                        <li>
+                            <img alt="No Indication of an Odometer Rollback" src="http://www.carfaxonline.com/phoenix/img/checkmark.jpg" />
+                            No Indication of an Odometer Rollback
+                        </li>
+                        <li>
+                            <img alt="No Accidents / Damage Reported to CARFAX" src="http://www.carfaxonline.com/phoenix/img/checkmark.jpg" />
+                            No Accidents / Damage Reported to CARFAX
+                        </li>
+                        <li>
+                            <img alt="No Manufacturer Recalls Reported to CARFAX" src="http://www.carfaxonline.com/phoenix/img/checkmark.jpg" />
+                            No Manufacturer Recalls Reported to CARFAX
+                        </li>
+                    </ul>
+
+                    <a class="" target="_blank" id="carfaxBTN" href="http://www.carfax.com/VehicleHistory/p/Report.cfx?vin=5UXFG8C54ALZ94579">Click Here For Full Report</a>
+                    <br />
+                    <div style="width: 100%; font-size: .8em; opacity: .7; text-align: center !important;">
+                        Not all accidents or other issues are reported to CARFAX. The
+                        number of owners is estimated. See the full CARFAX Report for
+                        additional information and glossary of terms. 11.Feb.2013
+                        13:22:35
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="detail-right">
+        <div id="detail-right-top">
+            <div id="right-top-left">
+                <h1 class="name">@((string) ViewData["CARTITLE"])</h1>
+                <ul class="unstyled"></ul>
+            </div>
+            <div id="right-top-right">
+                <h4 class="msrpPrice"></h4>
+                <h4 class="discountPrice"></h4>
+                <h2 class="price"></h2>
+                <div class="leoNoResponsiveBtns">
+                    <a target="_blank" href="http://www.pinterest.com/pin/create/button/?url=@(Request.Url.AbsoluteUri)&media=&description=" data-pin-do="buttonPin" data-pin-config="beside">
+                        <img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pin it" />
+                    </a>
+                    <input type="button" class="more_info" name="getMoreInfo" value="Get More Info">
+                    <input type="button" class="test_drive" name="testDrive" value="Request a Test Drive">
+                    <input type="button" class="make_offer" name="makeOffer" value="Make an offer">
+
+                    <a target="_blank" href="http://www.vincapture.com/trade/freewayisuzu/step-one-decode">
+                        <div class="tradein-button">
+                            <img src="/Content/images/vin-trade-in-long.gif" style="height: 35px;" alt="Trade in">
+                        </div>
+                    </a>
+                    <input type="button" class="get_quote" name="getQuote" value="Get a Quote">
+                    <input type="button" class="share_friend" name="getQuote" value="Share With a Friend">
+                    <input type="button" class="NCA_Credit" value="Apply for Financing">
+                </div>
+
+                <div class="leoResponsiveBtns" id="formResponsive">
+                    <input type="button" id="reGetMore" name="getMoreInfo" value="Get More Info">
+                    <input type="button" id="reTestDrive" name="testDrive" value="Request a Test Drive">
+                    <input type="button" id="reMakeOffer" name="makeOffer" value="Make an offer">
+
+                    <a target="_blank" href="http://www.vincapture.com/trade/freewayisuzu/step-one-decode">
+                        <div class="tradein-button">
+                            <img src="/Content/images/vin-trade-in-long.gif" style="height: 35px;" alt="Trade in">
+                        </div>
+                    </a>
+                    <input type="button" id="reGetQuote" name="getQuote" value="Get a Quote">
+                    <input type="button" id="reShareFriend" name="getQuote" value="Share With a Friend">
+                    <input type="button" class="NCA_Credit" value="Apply for Financing">
+                </div>
+
+            </div>
+        </div>
+
+        <div id="detail-right-middle">
+            <div id="dt-middle-menu">
+                <ul class="nav nav-tabs">
+                    <li id="description-info">
+                        <a href="javascript:void(0);">Description</a>
+                    </li>
+                    <li id="option-info" class="active">
+                        <a href="javascript:void(0);">Options</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="dt-middle-content">
+                <div class="tab-content">
+                    <div class="tab-pane active">
+                        <div class="well"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="span9 cell" id="keywords">
+            <div class="span9" id="similar" style="margin-left: 16px; overflow: hidden; background: transparent !important;">
+                <div id="similar_type">
+                    <h3 style="margin-bottom: 0px; color: red !important; margin-top: 7px;">Similiar Category</h3>
+                    <label>
+                        <input type="radio" name="similar_type" id="similar_make" checked="checked">
+                        <nobr style="margin-left: 15px;">
+                            Make
+                        </nobr>
+                    </label>
+                    <label>
+                        <input type="radio" name="similar_type" id="similar_model">
+                        <nobr style="margin-left: 15px;">
+                            Model
+                        </nobr>
+                    </label>
+                    <label style="width: 24%">
+                        <input type="radio" name="similar_type" id="similar_body">
+                        <nobr style="margin-left: 15px;">
+                            BodyStyle
+                        </nobr>
+                    </label>
+                    <!-- <label>
+                             <input type="radio" name="similar_type" id="similar_color">
+                             <nobr style="margin-left: 15px;">
+                                 Exterior Color
+                             </nobr> </label> -->
+                </div>
+                <div class="SimWrap">
+                    <div id="loading-holder" style="width: 100%; height: 100%;">
+                        <img src="/Content/images/ajax-loader.gif" style="margin-left: 40%; width: 100px; height: 100px; border: none; margin-top: 6%;" alt="Loading...">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="clear: both">
+        <!-- FOOTER ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_Footer.cshtml"); }
+    </div>
+</div>
+<!-- END OF WRAPPER DIV -->
+@{ Html.RenderPartial("~/Views/Shared/_Forms.cshtml"); }
+<!-- BRAND ROW -->
+<script type="text/javascript">
+    var page = "/Inventory/Detail/";
+    var detailUrl = "/Inventory/GetCarDetail";
+    var similarMakeUrl = "/Inventory/GetSimilarMake";
+    var similarBodyTypeUrl = "/Inventory/GetSimilarBodyType";
+    var similarModelUrl = "/Inventory/GetSimilarModel";
+</script>

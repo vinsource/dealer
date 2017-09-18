@@ -1,0 +1,157 @@
+﻿@{
+    ViewBag.Title = "Finding your used and new trucks";
+}
+
+@section meta{
+    <meta name="description" content="Freeway Isuzu - Finding your used trucks ✓ new trucks ✓ Hundreds of cars for sale ✓ Good prices ✓ Daily updated" />
+}
+
+<link type="text/css" rel="stylesheet" href="/Content/css/index.css" />
+<link type="text/css" rel="stylesheet" href="/Content/css/responsive.css"/>
+<style type="text/css">
+    #dealer-info h1 { margin-top: 20px; margin-left: 20px; margin-right: 20px; color: #111111 !important; font-size: 20px; }
+    #dealer-info a { color: #111111 !important; font-size: 20px; }
+
+</style>
+
+<script type="text/javascript" src="/Scripts/js/pages/pc_index.js"></script>
+<div class="row" id="content">
+    <div class="span12">
+        <!-- MAIN COLUMN CELL -->
+        <div class="row">
+            <!-- HERO ROW -->
+            <div class="span12">
+                <div id="slider">
+                    <div id="slider1" style="height: 300px; overflow: hidden;">
+                        <div class="sliderImg17" id="sliderImg1">
+                            <a href="@Url.Action("Parts","Specials")">
+                                <h2>Parts Specials</h2>
+                            </a>
+                        </div>
+                        <div class="sliderImg17" id="sliderImg2">
+                            <a href="http://www.isuzutruckparts.net/?refid=70446">
+                                <h2>Order Parts!</h2>
+                            </a>
+                        </div>
+                        <div class="sliderImg17" id="sliderImg3">
+                            <a href="@Url.Action("NewCars","Inventory")">
+                                <h2>New Commercial Vehicles</h2>
+                            </a>
+                        </div>
+                        <div class="sliderImg17" id="sliderImg4">
+                            <a href="@Url.Action("Service","Specials")">
+                                <h2>Service Specials</h2>
+                            </a>
+                        </div>
+                        <div class="sliderImg17" id="sliderImg5">
+                            <a href="@Url.Action("UsedCars","Inventory")">
+                                <h2>Pre-Owned Commercial Vehicles</h2>
+                            </a>
+                        </div>
+
+                        <div class="sliderImg17" id="sliderImg6">
+                            <a href="@Url.Action("UsedCars","Inventory")">
+                                <h2>Pre-Owned Cars and Trucks</h2>
+                            </a>
+                        </div>
+
+                        <div class="sliderImg17" id="sliderImg7">
+                            <a href="@Url.Action("UsedCars","Inventory")">
+                                <h2>Pre-Owned Commercial Vehicles</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF HERO ROW -->
+
+        <div class="row">
+            <!-- INFO CELL ROW -->
+            <div class="span4 cell qlMenus" id="cell1">
+                <div id="c1wrap" class="cellwrap qlMenusIn">
+                    <h3>Quick Links</h3>
+                    <ul class="unstyled">
+                        <li>
+                            <a class="btn grad-btn success" href="@Url.Action("NewCars","Inventory")">New Inventory</a>
+                        </li>
+                        <li>
+                            <a class="btn grad-btn success" href="@Url.Action("UsedCars","Inventory")">Pre-Owned Inventory</a>
+                        </li>
+                        <li>
+                            <a class="btn grad-btn success" href="@Url.Action("Lease","Specials")">Specials</a>
+                        </li>
+                        <li>
+                            <a class="btn grad-btn success" href="@Url.Action("Value","Vehicle")">Value My Trade</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="span4 cell" id="cell2" style="">
+                <div id="c2wrap" class="cellwrap">
+                    <h3>Schedule Service!</h3>
+                    <p>
+                        It has never been easier to schedule service for your Commercial Truck than it is here at Freeway Isuzu! We provide the highest level of service in the industry!
+                    </p>
+                    <p>
+                        Click below to learn more!
+                    </p>
+                    <a class="btn grad-btn success small more" href="@Url.Action("ServiceInfo","ServiceParts")">More ></a>
+                </div>
+            </div>
+            <div class="span4 cell" id="cell3">
+                <div id="c3wrap" class="cellwrap">
+                    <h3>Big Thanks!</h3>
+                    <p>
+                        Freeway Isuzu wants to congratulate Travis N. from Fontana, CA on the purchase of a 2005 Isuzu NPR HD DSL REG! You can be assured that you're driving only the highest quality vehicle in Fontana.
+                    </p>
+                    <p>
+                        Travis N, thank you for your patronage!
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <!-- END OF INFO CELL ROW -->
+
+        <div class="row">
+            <div class="span12 cell" id="dealer-info">
+                <h1><a href="http://freewayisuzu.com">About Freeway Isuzu</a></h1>
+                <p>
+                    Freeway Isuzu is a premier medium duty truck dealer with 30 years experience selling trucks in a wide range of models including the NPR, NPR-HD, NQR, NRR and Crew Cab models. The dealership prides itself on the constant  acquisition of premium pre-owned and new Isuzu trucks. We buy right and pass the savings on to you. The staff at Freeway is well versed in the needs of the commercial truck market and can provide nearly every solution to meet your company's needs or requirements be it with commercial vehicles, parts ordering,  service needs and financing opportunities. Thank you for visiting our online inventory or if you want come see us and our showroom in person we'll be happy to welcome you!
+                </p>
+            </div>
+        </div>
+
+        <!-- FOOTER ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_Footer.cshtml"); }
+        <!-- END OF FOOTER ROW -->
+
+    </div>
+    <!-- END OF MAIN CELL -->
+    <div class="span4" id="sidebar">
+        <!-- SIDEBAR CELL -->
+
+        <div class="row">
+            <!-- SOCIAL MEDIA ROW -->
+            <div class="span4" id="social">
+                <!-- CONTACT FORM ROW -->
+                @{ Html.RenderPartial("~/Views/Shared/_ContactForm.cshtml"); }
+							<!-- END OF CONTACT FORM ROW -->
+
+                <div class="fb-like-box" data-href="https://www.facebook.com/pages/Freeway-Isuzu/109055669178685" data-width="232" data-height="454" data-show-faces="false" data-border-color="#ccc" data-stream="true" data-header="false"></div>
+            </div>
+        </div>
+        <!-- END OF SOCIAL MEDIA ROW -->
+
+        <!-- FEATURED VEHICLE ROW -->
+
+        <!-- END OF FEATURED ROW -->
+
+    </div>
+    <!-- END OF SIDEBAR CELL -->
+</div>
+<!-- END OF CONTENT ROW -->
+<script type="text/javascript">
+    $("div.mn-home").addClass("nav-active");
+</script>

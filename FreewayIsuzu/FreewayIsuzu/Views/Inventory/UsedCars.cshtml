@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "Used Cars Inventory";
+}
+
+@section meta{
+    <meta name="description" content="Freeway Isuzu - Used cars inventory ✓ Finding your used trucks ✓ new trucks ✓ Hundreds of cars for sale ✓ Good prices ✓ Daily updated" />
+}
+
+<link type="text/css" rel="stylesheet" href="/Content/css/inventory.css" />
+<link type="text/css" rel="stylesheet" href="/Content/css/responsive.css" />
+<link type="text/css" rel="stylesheet" href="/Content/css/responsiveInventory.css" />
+
+<script type="text/javascript" src="/Scripts/js/pages/pc_inventory.js"></script>
+<div class="row" id="content">
+
+    <div class="span12" id="tertiary-cell">
+        @{ Html.RenderPartial("~/Views/Shared/_FullTextSearch.cshtml"); }
+        <div id="inventory" style="min-height: 600px;">
+            <div id="loading-holder" style="width: 100%; height: 600px;">
+                <img src="/Content/images/ajax-loader.gif" style="margin-left: 43%; width: 100px; height: 100px; border: none; margin-top: 33%;" alt="Loading...">
+            </div>
+        </div>
+        <div class="row">
+            <!-- FOOTER ROW -->
+            @{ Html.RenderPartial("~/Views/Shared/_Footer.cshtml"); }
+        </div>
+        <!-- END OF FOOTER ROW -->
+
+    </div>
+    <!-- END OF MAIN CELL -->
+    <div class="span4" id="sidebar">
+        <!-- SIDEBAR CELL -->
+        <div class="row">
+            <!-- SOCIAL MEDIA ROW -->
+            <div class="span4" id="filter">
+                <div id="filter-inner-wrap">
+
+                    <a id="filter-down-up" href="javascript:void(0);">
+                        <h1>Filter Options.</h1>
+                        <div id="ico-up-down" class="ft-up">
+                        </div>
+                    </a>
+
+                    <div id="filter-select-holder">
+                        <select id="makeDrp" name="make"></select>
+                        <select id="modelDrp" name="model"></select>
+                        <select id="trimDrp" name="trim"></select>
+                        <select id="yearDrp" name="year"></select>
+                        <select id="priceDrp" name="price"></select>
+
+                        <div style="width: 100%; text-align: right; height: 13px;">
+                            <a href="javascript:void(0);" class="display-all-cars">View All Cars</a>
+                            <br />
+                        </div>
+
+                        <div class="order-wrap">
+
+                            <h2>Order Results</h2>
+                            <input class="orderbtns" type="radio" name="order" value="make" id="order-make" />
+                            <label class="label-order" for="order-make">Make</label>
+                            <input class="orderbtns" type="radio" name="order" value="model" id="order-model" />
+                            <label class="label-order" for="order-model">Model</label>
+                            <input class="orderbtns" type="radio" name="order" value="year" id="order-year" />
+                            <label class="label-order" for="order-year">Year</label>
+                            <input checked="checked" class="orderbtns" type="radio" name="order" value="saleprice" id="order-saleprice" />
+                            <label class="label-order" for="order-saleprice">Price</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- END OF SOCIAL MEDIA ROW -->
+    </div>
+    <!-- END OF SIDEBAR CELL -->
+    <!-- END OF SIDEBAR CELL -->
+</div>
+<script type="text/javascript">
+    var page = "Inventory/Detail";
+    var inventoryUrl = "/Inventory/GetUsedInventory";
+    $("div.mn-used").addClass("nav-active");
+</script>

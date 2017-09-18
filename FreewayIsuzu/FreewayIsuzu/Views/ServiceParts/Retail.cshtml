@@ -1,0 +1,85 @@
+﻿@using FreewayIsuzu.Handlers
+@{
+    ViewBag.Title = "Retail";
+}
+
+@section meta{
+    <meta name="description" content="Freeway Isuzu - Retail ✓ Finding your used trucks ✓ new trucks ✓ Hundreds of cars for sale ✓ Good prices ✓ Daily updated" />
+}
+
+<link type="text/css" rel="stylesheet" href="/Content/css/retail.css" />
+<link type="text/css" rel="stylesheet" href="/Content/css/responsive.css" />
+<link type="text/css" rel="stylesheet" href="/Content/css/serviceInfoResponsive.css" />
+<div class="row" id="content" style="height: 800px;">
+
+    <div class="span12" id="tertiary-cell">
+        <div id="sales-team-listing">
+            <!-- AD CELLS -->
+            <h1 id="feetH1">Parts Department</h1>
+            <div id="feetImgHolder" style="height: 254px; overflow: hidden; position: relative;">
+                <img src="/Content/images/service.jpg" style="width: 100%; position: absolute; top: 0;" alt="Parts Department">
+            </div>
+            <div class="span4 cell" id="leoRetailCell1">
+                <div class="cellwrap">
+                    <h3>Parts Department</h3>
+                    <h4>Commercial Truck &amp; Car Parts</h4>
+                    <p>
+                        Freeway Isuzu offers a complete line of isuzu parts for your commercial truck or van. We also offer parts for your pre-owned car or truck. Call today or contact our service department for any parts you may need.
+                    </p>
+                    <p>
+                        Phone: @SessionHandler.Dealer.Phone
+                    </p>
+                </div>
+            </div>
+            <div class="span4 cell cell-spacer">
+                <div class="cellwrap">
+                    <h3>Parts Specials</h3>
+                    <h4>Priority Service and Maintenance Program</h4>
+                    <p>
+                        Isuzu’s Priority Service Maintenance Program provides manufacturer approved scheduled maintenance.
+                    </p>
+                    <h4>Eligible Vehicles</h4>
+                    <p>
+                        All 2008 N/F-Series and newer Diesel and Gas model vehicles distributed by Isuzu Commercial Truck of America, Inc., subject to utilization and mileage guidelines after submission and approval by Isuzu.
+                    </p>
+                    <a class="btn success" href="@Url.Action("Parts","Specials")">View Our Specials!</a>
+                </div>
+            </div>
+            <div class="span4 cell" id="leoRetailCell3">
+                <div class="cellwrap">
+                    <h3>Order Parts</h3>
+                    <p>
+                        Freeway Isuzu carries the largest selection of Isuzu truck and commercial vehicle parts in the area.
+                    </p>
+                    <p>
+                        Our convenient online parts inventory and ordering process will allow you to quickly find and aquire the parts you need to keep your vehicles on the road.
+                    </p>
+                    <a class="btn success" href="http://www.isuzutruckparts.net/?refid=70446" target="_blank">View / Order Parts Now!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- FOOTER ROW -->
+            @{ Html.RenderPartial("~/Views/Shared/_Footer.cshtml"); }
+        </div>
+        <!-- END OF FOOTER ROW -->
+
+    </div>
+    <!-- END OF MAIN CELL -->
+    <div class="span4" id="sidebar">
+        <!-- CONTACT FORM ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_ContactForm.cshtml"); }
+        <!-- END OF CONTACT FORM ROW -->
+        <!-- MAP ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_Map.cshtml"); }
+        <!-- END OF MAP ROW -->
+        <!-- Dealerinfo ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_DealerInfo.cshtml"); }
+        <!-- END OF Dealerinfo ROW -->
+    </div>
+    <!-- END OF SIDEBAR CELL -->
+</div>
+<script type="text/javascript">
+    $("div.mn-service-part").addClass("nav-active");
+</script>

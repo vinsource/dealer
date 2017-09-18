@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Vincontrol.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Appraisal">
+          <Key>
+            <PropertyRef Name="AppraisalId" />
+          </Key>
+          <Property Name="AppraisalId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PackageDescription" Type="nvarchar(max)" />
+          <Property Name="PhotoUrl" Type="nvarchar(max)" />
+          <Property Name="AppraisalType" Type="nvarchar" MaxLength="25" />
+          <Property Name="Note" Type="nvarchar(max)" />
+          <Property Name="AppraisalStatusCodeId" Type="smallint" />
+          <Property Name="VinGenie" Type="bit" />
+          <Property Name="VinGenieUserId" Type="int" />
+          <Property Name="DeviceId" Type="nvarchar" MaxLength="100" />
+          <Property Name="DeviceName" Type="nvarchar" MaxLength="255" />
+          <Property Name="KarPowerEntryId" Type="nvarchar" MaxLength="45" />
+          <Property Name="Location" Type="nvarchar" MaxLength="200" />
+          <Property Name="AppraisalCustomerId" Type="int" />
+          <Property Name="AppraisalById" Type="int" />
+          <Property Name="VinGenieAppraisalDate" Type="datetime2" Precision="0" />
+          <Property Name="AppraisalDate" Type="datetime2" Precision="0" />
+          <Property Name="OldAppraisalId" Type="int" />
+          <Property Name="Stock" Type="nvarchar" MaxLength="100" />
+          <Property Name="SalePrice" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Mileage" Type="bigint" />
+          <Property Name="ExteriorColor" Type="nvarchar" MaxLength="100" />
+          <Property Name="Certified" Type="bit" />
+          <Property Name="AdditionalOptions" Type="nvarchar(max)" />
+          <Property Name="AdditionalPackages" Type="nvarchar(max)" />
+          <Property Name="Descriptions" Type="nvarchar(max)" />
+          <Property Name="DealerId" Type="int" Nullable="false" />
+          <Property Name="CarRanking" Type="int" />
+          <Property Name="MarketTrim" Type="nvarchar" MaxLength="45" />
+          <Property Name="MarketRange" Type="int" />
+          <Property Name="LastUpdated" Type="datetime" />
+          <Property Name="CARFAXOwner" Type="int" />
+          <Property Name="ACV" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="DealerCost" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="VehicleId" Type="int" Nullable="false" />
+          <Property Name="ThumbnailUrl" Type="nvarchar(max)" />
+          <Property Name="PackageDescriptions" Type="nvarchar(max)" />
+          <Property Name="NumberOfCar" Type="int" />
+          <Property Name="IsManualDecode" Type="bit" Nullable="false" />
+          <Property Name="OptionCodes" Type="nvarchar(max)" />
+          <Property Name="CertifiedAmount" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="MileageAdjustment" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="ACar" Type="bit" />
+        </EntityType>
+        <EntityType Name="Inventory">
+          <Key>
+            <PropertyRef Name="InventoryId" />
+          </Key>
+          <Property Name="InventoryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DealerMsrp" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Certified" Type="bit" />
+          <Property Name="ThumbnailUrl" Type="nvarchar(max)" />
+          <Property Name="DateInStock" Type="datetime2" Precision="0" />
+          <Property Name="Condition" Type="bit" Nullable="false" />
+          <Property Name="AddToInventoryById" Type="int" />
+          <Property Name="AppraisalId" Type="int" />
+          <Property Name="WarrantyInfo" Type="int" />
+          <Property Name="RetailPrice" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="WindowStickerPrice" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="DealerDiscount" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="ManufacturerRebate" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="PriorRental" Type="bit" />
+          <Property Name="Disclaimer" Type="nvarchar(max)" />
+          <Property Name="DealerDemo" Type="bit" />
+          <Property Name="Unwind" Type="bit" />
+          <Property Name="IsFeatured" Type="bit" />
+          <Property Name="AdditionalTitle" Type="nvarchar" MaxLength="255" />
+          <Property Name="EnableAutoDescription" Type="bit" />
+          <Property Name="DescriptionTemplateId" Type="int" />
+          <Property Name="BucketJumpCompleteDay" Type="int" />
+          <Property Name="ACar" Type="bit" />
+          <Property Name="BrandedTitle" Type="bit" />
+          <Property Name="OldInventoryId" Type="int" />
+          <Property Name="OldType" Type="nvarchar" MaxLength="3" />
+          <Property Name="InventoryStatusCodeId" Type="smallint" Nullable="false" />
+          <Property Name="Stock" Type="nvarchar" MaxLength="100" />
+          <Property Name="SalePrice" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Mileage" Type="bigint" />
+          <Property Name="ExteriorColor" Type="nvarchar" MaxLength="100" />
+          <Property Name="AdditionalOptions" Type="nvarchar(max)" />
+          <Property Name="AdditionalPackages" Type="nvarchar(max)" />
+          <Property Name="Descriptions" Type="nvarchar(max)" />
+          <Property Name="PhotoUrl" Type="nvarchar(max)" />
+          <Property Name="DealerId" Type="int" Nullable="false" />
+          <Property Name="CarRanking" Type="int" />
+          <Property Name="MarketTrim" Type="nvarchar" MaxLength="45" />
+          <Property Name="MarketRange" Type="int" />
+          <Property Name="LastUpdated" Type="datetime" />
+          <Property Name="CarfaxOwner" Type="int" />
+          <Property Name="ACV" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="DealerCost" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="OldAppraisalId" Type="int" />
+          <Property Name="VehicleId" Type="int" Nullable="false" />
+          <Property Name="PackageDescriptions" Type="nvarchar(max)" />
+          <Property Name="NumberOfCar" Type="int" />
+          <Property Name="Invoice" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="IsManualDecode" Type="bit" Nullable="false" />
+          <Property Name="OptionCodes" Type="nvarchar(max)" />
+          <Property Name="SavedBucketJump" Type="bit" />
+          <Property Name="SavedBucketJumpDate" Type="datetime" />
+          <Property Name="CertifiedAmount" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="MileageAdjustment" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Note" Type="nvarchar(max)" />
+          <Property Name="ExternalPhotoUrl" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Vehicle">
+          <Key>
+            <PropertyRef Name="VehicleId" />
+          </Key>
+          <Property Name="VehicleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Year" Type="int" />
+          <Property Name="Make" Type="nvarchar" MaxLength="100" />
+          <Property Name="Model" Type="nvarchar" MaxLength="100" />
+          <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+          <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+          <Property Name="Msrp" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="InteriorColor" Type="nvarchar" MaxLength="100" />
+          <Property Name="BodyType" Type="nvarchar" MaxLength="100" />
+          <Property Name="Cylinders" Type="int" />
+          <Property Name="Litter" Type="float" />
+          <Property Name="EngineType" Type="nvarchar" MaxLength="100" />
+          <Property Name="DriveTrain" Type="nvarchar" MaxLength="100" />
+          <Property Name="FuelType" Type="nvarchar" MaxLength="100" />
+          <Property Name="Tranmission" Type="nvarchar" MaxLength="200" />
+          <Property Name="Doors" Type="int" />
+          <Property Name="FuelEconomyCity" Type="nvarchar" MaxLength="45" />
+          <Property Name="FuelEconomyHighWay" Type="nvarchar" MaxLength="45" />
+          <Property Name="StandardOptions" Type="nvarchar(max)" />
+          <Property Name="KBBEngineId" Type="int" />
+          <Property Name="KBBTransmissionId" Type="int" />
+          <Property Name="KBBDriveTrainId" Type="int" />
+          <Property Name="KBBOptionsId" Type="nvarchar(max)" />
+          <Property Name="KBBTrimId" Type="int" />
+          <Property Name="MarketLowestPrice" Type="decimal" Precision="11" Scale="0" />
+          <Property Name="MarketAveragePrice" Type="decimal" Precision="11" Scale="0" />
+          <Property Name="MarketHighestPrice" Type="decimal" Precision="11" Scale="0" />
+          <Property Name="ColorCode" Type="nvarchar" MaxLength="30" />
+          <Property Name="NumberOfCar" Type="int" />
+          <Property Name="ChromeStyleId" Type="nvarchar" MaxLength="45" />
+          <Property Name="ChromeModelId" Type="nvarchar" MaxLength="45" />
+          <Property Name="ManheimTrimId" Type="int" />
+          <Property Name="VehicleType" Type="smallint" />
+          <Property Name="DefaultStockImage" Type="nvarchar(max)" />
+          <Property Name="OldIsWholesale" Type="bit" />
+          <Property Name="OldAppraisalId" Type="int" />
+          <Property Name="OldInventoryId" Type="int" />
+          <Property Name="OldSoldoutInventoryId" Type="int" />
+          <Property Name="ModelNumber" Type="nvarchar" MaxLength="30" />
+          <Property Name="TruckType" Type="nvarchar" MaxLength="100" />
+          <Property Name="TruckCategoryId" Type="int" />
+          <Property Name="TruckClassId" Type="int" />
+          <Property Name="KBBModelId" Type="int" />
+        </EntityType>
+        <Association Name="FK_Appraisal_Vehicle">
+          <End Role="Vehicle" Type="Self.Vehicle" Multiplicity="1" />
+          <End Role="Appraisal" Type="Self.Appraisal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Vehicle">
+              <PropertyRef Name="VehicleId" />
+            </Principal>
+            <Dependent Role="Appraisal">
+              <PropertyRef Name="VehicleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Inventory_Vehicle">
+          <End Role="Vehicle" Type="Self.Vehicle" Multiplicity="1" />
+          <End Role="Inventory" Type="Self.Inventory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Vehicle">
+              <PropertyRef Name="VehicleId" />
+            </Principal>
+            <Dependent Role="Inventory">
+              <PropertyRef Name="VehicleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="VincontrolStoreContainer">
+          <EntitySet Name="Appraisal" EntityType="Self.Appraisal" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Inventory" EntityType="Self.Inventory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Vehicle" EntityType="Self.Vehicle" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Appraisal_Vehicle" Association="Self.FK_Appraisal_Vehicle">
+            <End Role="Vehicle" EntitySet="Vehicle" />
+            <End Role="Appraisal" EntitySet="Appraisal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Inventory_Vehicle" Association="Self.FK_Inventory_Vehicle">
+            <End Role="Vehicle" EntitySet="Vehicle" />
+            <End Role="Inventory" EntitySet="Inventory" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Vincontrol" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="VincontrolContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Appraisals" EntityType="Vincontrol.Appraisal" />
+          <EntitySet Name="Inventories" EntityType="Vincontrol.Inventory" />
+          <EntitySet Name="Vehicles" EntityType="Vincontrol.Vehicle" />
+          <AssociationSet Name="FK_Appraisal_Vehicle" Association="Vincontrol.FK_Appraisal_Vehicle">
+            <End Role="Vehicle" EntitySet="Vehicles" />
+            <End Role="Appraisal" EntitySet="Appraisals" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Inventory_Vehicle" Association="Vincontrol.FK_Inventory_Vehicle">
+            <End Role="Vehicle" EntitySet="Vehicles" />
+            <End Role="Inventory" EntitySet="Inventories" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Appraisal">
+          <Key>
+            <PropertyRef Name="AppraisalId" />
+          </Key>
+          <Property Name="AppraisalId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PackageDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PhotoUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppraisalType" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppraisalStatusCodeId" Type="Int16" />
+          <Property Name="VinGenie" Type="Boolean" />
+          <Property Name="VinGenieUserId" Type="Int32" />
+          <Property Name="DeviceId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="DeviceName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="KarPowerEntryId" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="Location" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="AppraisalCustomerId" Type="Int32" />
+          <Property Name="AppraisalById" Type="Int32" />
+          <Property Name="VinGenieAppraisalDate" Type="DateTime" Precision="0" />
+          <Property Name="AppraisalDate" Type="DateTime" Precision="0" />
+          <Property Name="OldAppraisalId" Type="Int32" />
+          <Property Name="Stock" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SalePrice" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Mileage" Type="Int64" />
+          <Property Name="ExteriorColor" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Certified" Type="Boolean" />
+          <Property Name="AdditionalOptions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AdditionalPackages" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Descriptions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DealerId" Type="Int32" Nullable="false" />
+          <Property Name="CarRanking" Type="Int32" />
+          <Property Name="MarketTrim" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="MarketRange" Type="Int32" />
+          <Property Name="LastUpdated" Type="DateTime" Precision="3" />
+          <Property Name="CARFAXOwner" Type="Int32" />
+          <Property Name="ACV" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DealerCost" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="VehicleId" Type="Int32" Nullable="false" />
+          <Property Name="ThumbnailUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PackageDescriptions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NumberOfCar" Type="Int32" />
+          <Property Name="IsManualDecode" Type="Boolean" Nullable="false" />
+          <Property Name="OptionCodes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CertifiedAmount" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="MileageAdjustment" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="ACar" Type="Boolean" />
+          <NavigationProperty Name="Vehicle" Relationship="Vincontrol.FK_Appraisal_Vehicle" FromRole="Appraisal" ToRole="Vehicle" />
+        </EntityType>
+        <EntityType Name="Inventory">
+          <Key>
+            <PropertyRef Name="InventoryId" />
+          </Key>
+          <Property Name="InventoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DealerMsrp" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Certified" Type="Boolean" />
+          <Property Name="ThumbnailUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DateInStock" Type="DateTime" Precision="0" />
+          <Property Name="Condition" Type="Boolean" Nullable="false" />
+          <Property Name="AddToInventoryById" Type="Int32" />
+          <Property Name="AppraisalId" Type="Int32" />
+          <Property Name="WarrantyInfo" Type="Int32" />
+          <Property Name="RetailPrice" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="WindowStickerPrice" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DealerDiscount" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="ManufacturerRebate" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="PriorRental" Type="Boolean" />
+          <Property Name="Disclaimer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DealerDemo" Type="Boolean" />
+          <Property Name="Unwind" Type="Boolean" />
+          <Property Name="IsFeatured" Type="Boolean" />
+          <Property Name="AdditionalTitle" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="EnableAutoDescription" Type="Boolean" />
+          <Property Name="DescriptionTemplateId" Type="Int32" />
+          <Property Name="BucketJumpCompleteDay" Type="Int32" />
+          <Property Name="ACar" Type="Boolean" />
+          <Property Name="BrandedTitle" Type="Boolean" />
+          <Property Name="OldInventoryId" Type="Int32" />
+          <Property Name="OldType" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="InventoryStatusCodeId" Type="Int16" Nullable="false" />
+          <Property Name="Stock" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SalePrice" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Mileage" Type="Int64" />
+          <Property Name="ExteriorColor" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="AdditionalOptions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AdditionalPackages" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Descriptions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PhotoUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DealerId" Type="Int32" Nullable="false" />
+          <Property Name="CarRanking" Type="Int32" />
+          <Property Name="MarketTrim" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="MarketRange" Type="Int32" />
+          <Property Name="LastUpdated" Type="DateTime" Precision="3" />
+          <Property Name="CarfaxOwner" Type="Int32" />
+          <Property Name="ACV" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DealerCost" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="OldAppraisalId" Type="Int32" />
+          <Property Name="VehicleId" Type="Int32" Nullable="false" />
+          <Property Name="PackageDescriptions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NumberOfCar" Type="Int32" />
+          <Property Name="Invoice" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="IsManualDecode" Type="Boolean" Nullable="false" />
+          <Property Name="OptionCodes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SavedBucketJump" Type="Boolean" />
+          <Property Name="SavedBucketJumpDate" Type="DateTime" Precision="3" />
+          <Property Name="CertifiedAmount" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="MileageAdjustment" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ExternalPhotoUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Vehicle" Relationship="Vincontrol.FK_Inventory_Vehicle" FromRole="Inventory" ToRole="Vehicle" />
+        </EntityType>
+        <EntityType Name="Vehicle">
+          <Key>
+            <PropertyRef Name="VehicleId" />
+          </Key>
+          <Property Name="VehicleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Year" Type="Int32" />
+          <Property Name="Make" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Model" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Trim" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Vin" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Msrp" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="InteriorColor" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="BodyType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Cylinders" Type="Int32" />
+          <Property Name="Litter" Type="Double" />
+          <Property Name="EngineType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="DriveTrain" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="FuelType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Tranmission" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Doors" Type="Int32" />
+          <Property Name="FuelEconomyCity" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="FuelEconomyHighWay" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="StandardOptions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="KBBEngineId" Type="Int32" />
+          <Property Name="KBBTransmissionId" Type="Int32" />
+          <Property Name="KBBDriveTrainId" Type="Int32" />
+          <Property Name="KBBOptionsId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="KBBTrimId" Type="Int32" />
+          <Property Name="MarketLowestPrice" Type="Decimal" Precision="11" Scale="0" />
+          <Property Name="MarketAveragePrice" Type="Decimal" Precision="11" Scale="0" />
+          <Property Name="MarketHighestPrice" Type="Decimal" Precision="11" Scale="0" />
+          <Property Name="ColorCode" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="NumberOfCar" Type="Int32" />
+          <Property Name="ChromeStyleId" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="ChromeModelId" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="ManheimTrimId" Type="Int32" />
+          <Property Name="VehicleType" Type="Int16" />
+          <Property Name="DefaultStockImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OldIsWholesale" Type="Boolean" />
+          <Property Name="OldAppraisalId" Type="Int32" />
+          <Property Name="OldInventoryId" Type="Int32" />
+          <Property Name="OldSoldoutInventoryId" Type="Int32" />
+          <Property Name="ModelNumber" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="TruckType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TruckCategoryId" Type="Int32" />
+          <Property Name="TruckClassId" Type="Int32" />
+          <Property Name="KBBModelId" Type="Int32" />
+          <NavigationProperty Name="Appraisals" Relationship="Vincontrol.FK_Appraisal_Vehicle" FromRole="Vehicle" ToRole="Appraisal" />
+          <NavigationProperty Name="Inventories" Relationship="Vincontrol.FK_Inventory_Vehicle" FromRole="Vehicle" ToRole="Inventory" />
+        </EntityType>
+        <Association Name="FK_Appraisal_Vehicle">
+          <End Type="Vincontrol.Vehicle" Role="Vehicle" Multiplicity="1" />
+          <End Type="Vincontrol.Appraisal" Role="Appraisal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Vehicle">
+              <PropertyRef Name="VehicleId" />
+            </Principal>
+            <Dependent Role="Appraisal">
+              <PropertyRef Name="VehicleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Inventory_Vehicle">
+          <End Type="Vincontrol.Vehicle" Role="Vehicle" Multiplicity="1" />
+          <End Type="Vincontrol.Inventory" Role="Inventory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Vehicle">
+              <PropertyRef Name="VehicleId" />
+            </Principal>
+            <Dependent Role="Inventory">
+              <PropertyRef Name="VehicleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="Vincontrol" />
+        <Alias Key="Target" Value="Vincontrol.Store" />
+        <EntityContainerMapping CdmEntityContainer="VincontrolContainer" StorageEntityContainer="VincontrolStoreContainer">
+          <EntitySetMapping Name="Appraisals">
+            <EntityTypeMapping TypeName="Vincontrol.Appraisal">
+              <MappingFragment StoreEntitySet="Appraisal">
+                <ScalarProperty Name="ACar" ColumnName="ACar" />
+                <ScalarProperty Name="MileageAdjustment" ColumnName="MileageAdjustment" />
+                <ScalarProperty Name="CertifiedAmount" ColumnName="CertifiedAmount" />
+                <ScalarProperty Name="OptionCodes" ColumnName="OptionCodes" />
+                <ScalarProperty Name="IsManualDecode" ColumnName="IsManualDecode" />
+                <ScalarProperty Name="NumberOfCar" ColumnName="NumberOfCar" />
+                <ScalarProperty Name="PackageDescriptions" ColumnName="PackageDescriptions" />
+                <ScalarProperty Name="ThumbnailUrl" ColumnName="ThumbnailUrl" />
+                <ScalarProperty Name="VehicleId" ColumnName="VehicleId" />
+                <ScalarProperty Name="DealerCost" ColumnName="DealerCost" />
+                <ScalarProperty Name="ACV" ColumnName="ACV" />
+                <ScalarProperty Name="CARFAXOwner" ColumnName="CARFAXOwner" />
+                <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+                <ScalarProperty Name="MarketRange" ColumnName="MarketRange" />
+                <ScalarProperty Name="MarketTrim" ColumnName="MarketTrim" />
+                <ScalarProperty Name="CarRanking" ColumnName="CarRanking" />
+                <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+                <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+                <ScalarProperty Name="AdditionalPackages" ColumnName="AdditionalPackages" />
+                <ScalarProperty Name="AdditionalOptions" ColumnName="AdditionalOptions" />
+                <ScalarProperty Name="Certified" ColumnName="Certified" />
+                <ScalarProperty Name="ExteriorColor" ColumnName="ExteriorColor" />
+                <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+                <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+                <ScalarProperty Name="Stock" ColumnName="Stock" />
+                <ScalarProperty Name="OldAppraisalId" ColumnName="OldAppraisalId" />
+                <ScalarProperty Name="AppraisalDate" ColumnName="AppraisalDate" />
+                <ScalarProperty Name="VinGenieAppraisalDate" ColumnName="VinGenieAppraisalDate" />
+                <ScalarProperty Name="AppraisalById" ColumnName="AppraisalById" />
+                <ScalarProperty Name="AppraisalCustomerId" ColumnName="AppraisalCustomerId" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="KarPowerEntryId" ColumnName="KarPowerEntryId" />
+                <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+                <ScalarProperty Name="DeviceId" ColumnName="DeviceId" />
+                <ScalarProperty Name="VinGenieUserId" ColumnName="VinGenieUserId" />
+                <ScalarProperty Name="VinGenie" ColumnName="VinGenie" />
+                <ScalarProperty Name="AppraisalStatusCodeId" ColumnName="AppraisalStatusCodeId" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="AppraisalType" ColumnName="AppraisalType" />
+                <ScalarProperty Name="PhotoUrl" ColumnName="PhotoUrl" />
+                <ScalarProperty Name="PackageDescription" ColumnName="PackageDescription" />
+                <ScalarProperty Name="AppraisalId" ColumnName="AppraisalId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Inventories">
+            <EntityTypeMapping TypeName="Vincontrol.Inventory">
+              <MappingFragment StoreEntitySet="Inventory">
+                <ScalarProperty Name="ExternalPhotoUrl" ColumnName="ExternalPhotoUrl" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="MileageAdjustment" ColumnName="MileageAdjustment" />
+                <ScalarProperty Name="CertifiedAmount" ColumnName="CertifiedAmount" />
+                <ScalarProperty Name="SavedBucketJumpDate" ColumnName="SavedBucketJumpDate" />
+                <ScalarProperty Name="SavedBucketJump" ColumnName="SavedBucketJump" />
+                <ScalarProperty Name="OptionCodes" ColumnName="OptionCodes" />
+                <ScalarProperty Name="IsManualDecode" ColumnName="IsManualDecode" />
+                <ScalarProperty Name="Invoice" ColumnName="Invoice" />
+                <ScalarProperty Name="NumberOfCar" ColumnName="NumberOfCar" />
+                <ScalarProperty Name="PackageDescriptions" ColumnName="PackageDescriptions" />
+                <ScalarProperty Name="VehicleId" ColumnName="VehicleId" />
+                <ScalarProperty Name="OldAppraisalId" ColumnName="OldAppraisalId" />
+                <ScalarProperty Name="DealerCost" ColumnName="DealerCost" />
+                <ScalarProperty Name="ACV" ColumnName="ACV" />
+                <ScalarProperty Name="CarfaxOwner" ColumnName="CarfaxOwner" />
+                <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+                <ScalarProperty Name="MarketRange" ColumnName="MarketRange" />
+                <ScalarProperty Name="MarketTrim" ColumnName="MarketTrim" />
+                <ScalarProperty Name="CarRanking" ColumnName="CarRanking" />
+                <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+                <ScalarProperty Name="PhotoUrl" ColumnName="PhotoUrl" />
+                <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+                <ScalarProperty Name="AdditionalPackages" ColumnName="AdditionalPackages" />
+                <ScalarProperty Name="AdditionalOptions" ColumnName="AdditionalOptions" />
+                <ScalarProperty Name="ExteriorColor" ColumnName="ExteriorColor" />
+                <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+                <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+                <ScalarProperty Name="Stock" ColumnName="Stock" />
+                <ScalarProperty Name="InventoryStatusCodeId" ColumnName="InventoryStatusCodeId" />
+                <ScalarProperty Name="OldType" ColumnName="OldType" />
+                <ScalarProperty Name="OldInventoryId" ColumnName="OldInventoryId" />
+                <ScalarProperty Name="BrandedTitle" ColumnName="BrandedTitle" />
+                <ScalarProperty Name="ACar" ColumnName="ACar" />
+                <ScalarProperty Name="BucketJumpCompleteDay" ColumnName="BucketJumpCompleteDay" />
+                <ScalarProperty Name="DescriptionTemplateId" ColumnName="DescriptionTemplateId" />
+                <ScalarProperty Name="EnableAutoDescription" ColumnName="EnableAutoDescription" />
+                <ScalarProperty Name="AdditionalTitle" ColumnName="AdditionalTitle" />
+                <ScalarProperty Name="IsFeatured" ColumnName="IsFeatured" />
+                <ScalarProperty Name="Unwind" ColumnName="Unwind" />
+                <ScalarProperty Name="DealerDemo" ColumnName="DealerDemo" />
+                <ScalarProperty Name="Disclaimer" ColumnName="Disclaimer" />
+                <ScalarProperty Name="PriorRental" ColumnName="PriorRental" />
+                <ScalarProperty Name="ManufacturerRebate" ColumnName="ManufacturerRebate" />
+                <ScalarProperty Name="DealerDiscount" ColumnName="DealerDiscount" />
+                <ScalarProperty Name="WindowStickerPrice" ColumnName="WindowStickerPrice" />
+                <ScalarProperty Name="RetailPrice" ColumnName="RetailPrice" />
+                <ScalarProperty Name="WarrantyInfo" ColumnName="WarrantyInfo" />
+                <ScalarProperty Name="AppraisalId" ColumnName="AppraisalId" />
+                <ScalarProperty Name="AddToInventoryById" ColumnName="AddToInventoryById" />
+                <ScalarProperty Name="Condition" ColumnName="Condition" />
+                <ScalarProperty Name="DateInStock" ColumnName="DateInStock" />
+                <ScalarProperty Name="ThumbnailUrl" ColumnName="ThumbnailUrl" />
+                <ScalarProperty Name="Certified" ColumnName="Certified" />
+                <ScalarProperty Name="DealerMsrp" ColumnName="DealerMsrp" />
+                <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Vehicles">
+            <EntityTypeMapping TypeName="Vincontrol.Vehicle">
+              <MappingFragment StoreEntitySet="Vehicle">
+                <ScalarProperty Name="KBBModelId" ColumnName="KBBModelId" />
+                <ScalarProperty Name="TruckClassId" ColumnName="TruckClassId" />
+                <ScalarProperty Name="TruckCategoryId" ColumnName="TruckCategoryId" />
+                <ScalarProperty Name="TruckType" ColumnName="TruckType" />
+                <ScalarProperty Name="ModelNumber" ColumnName="ModelNumber" />
+                <ScalarProperty Name="OldSoldoutInventoryId" ColumnName="OldSoldoutInventoryId" />
+                <ScalarProperty Name="OldInventoryId" ColumnName="OldInventoryId" />
+                <ScalarProperty Name="OldAppraisalId" ColumnName="OldAppraisalId" />
+                <ScalarProperty Name="OldIsWholesale" ColumnName="OldIsWholesale" />
+                <ScalarProperty Name="DefaultStockImage" ColumnName="DefaultStockImage" />
+                <ScalarProperty Name="VehicleType" ColumnName="VehicleType" />
+                <ScalarProperty Name="ManheimTrimId" ColumnName="ManheimTrimId" />
+                <ScalarProperty Name="ChromeModelId" ColumnName="ChromeModelId" />
+                <ScalarProperty Name="ChromeStyleId" ColumnName="ChromeStyleId" />
+                <ScalarProperty Name="NumberOfCar" ColumnName="NumberOfCar" />
+                <ScalarProperty Name="ColorCode" ColumnName="ColorCode" />
+                <ScalarProperty Name="MarketHighestPrice" ColumnName="MarketHighestPrice" />
+                <ScalarProperty Name="MarketAveragePrice" ColumnName="MarketAveragePrice" />
+                <ScalarProperty Name="MarketLowestPrice" ColumnName="MarketLowestPrice" />
+                <ScalarProperty Name="KBBTrimId" ColumnName="KBBTrimId" />
+                <ScalarProperty Name="KBBOptionsId" ColumnName="KBBOptionsId" />
+                <ScalarProperty Name="KBBDriveTrainId" ColumnName="KBBDriveTrainId" />
+                <ScalarProperty Name="KBBTransmissionId" ColumnName="KBBTransmissionId" />
+                <ScalarProperty Name="KBBEngineId" ColumnName="KBBEngineId" />
+                <ScalarProperty Name="StandardOptions" ColumnName="StandardOptions" />
+                <ScalarProperty Name="FuelEconomyHighWay" ColumnName="FuelEconomyHighWay" />
+                <ScalarProperty Name="FuelEconomyCity" ColumnName="FuelEconomyCity" />
+                <ScalarProperty Name="Doors" ColumnName="Doors" />
+                <ScalarProperty Name="Tranmission" ColumnName="Tranmission" />
+                <ScalarProperty Name="FuelType" ColumnName="FuelType" />
+                <ScalarProperty Name="DriveTrain" ColumnName="DriveTrain" />
+                <ScalarProperty Name="EngineType" ColumnName="EngineType" />
+                <ScalarProperty Name="Litter" ColumnName="Litter" />
+                <ScalarProperty Name="Cylinders" ColumnName="Cylinders" />
+                <ScalarProperty Name="BodyType" ColumnName="BodyType" />
+                <ScalarProperty Name="InteriorColor" ColumnName="InteriorColor" />
+                <ScalarProperty Name="Msrp" ColumnName="Msrp" />
+                <ScalarProperty Name="Vin" ColumnName="Vin" />
+                <ScalarProperty Name="Trim" ColumnName="Trim" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="Make" ColumnName="Make" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
+                <ScalarProperty Name="VehicleId" ColumnName="VehicleId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

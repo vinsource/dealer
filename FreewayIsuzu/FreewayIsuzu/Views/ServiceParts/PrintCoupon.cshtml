@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+}
+<style type="text/css" media="print">
+    body {
+        background-color: #FFFFFF;
+        border: solid 1px black;
+        margin: 0px; /* the margin on the content before printing */
+    }
+</style>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="description" content="Freeway Isuzu - Print coupon ✓ Finding your used trucks ✓ new trucks ✓ Hundreds of cars for sale ✓ Good prices ✓ Daily updated" />
+    @*<meta name="keywords" content="new trucks, used trucks, truck, trucks, commercial vehicles, truck locator, parts specials, service specials, value trade, Freeway Isuzu" />*@
+    <meta name="author" content="freewayisuzutruck.com, freewayisuzu.com, freewayisuzu" />
+    <meta name="viewport" content="width=device-width">
+    <title>@ViewData["title"]</title>
+</head>
+<body style="margin: 0px;">
+    <img style="display: block; -webkit-user-select: none; margin: 0px auto;" src="@ViewData["urlImg"]">
+
+    <script type="text/javascript">
+        window.print();
+    </script>
+</body>
+
+</html>

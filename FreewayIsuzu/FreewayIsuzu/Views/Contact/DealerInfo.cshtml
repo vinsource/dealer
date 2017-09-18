@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Dealership Information";
+}
+
+@section meta{
+    <meta name="description" content="Freeway Isuzu - Dealership Information ✓ Finding your used trucks ✓ new trucks ✓ Hundreds of cars for sale ✓ Good prices ✓ Daily updated" />
+}
+
+<style>
+    #dealerInfo { padding: 5px; background-color: #EEE; }
+
+    #dealerInfo > h4 { font-size: 18px; margin: 10px 0px; }
+
+    #dealerInfo > ul > li { line-height: 26px; font-size: 17px; color: #28E; font-weight: bold; }
+
+    #dealerInfo > ul > li > div { width: 90px !important; }
+
+    #tertiary-cell h1 { color: #333 !important;font-size: 24px; }
+</style>
+<link type="text/css" rel="stylesheet" href="/Content/css/responsive.css" />
+<div class="row" id="content">
+    <div class="span12" id="tertiary-cell">
+        <div id="sales-team-listing">
+            <!-- AD CELLS -->
+            <h1>Hours &amp; Information</h1>
+            <div class="leoNewDiImg" style="height: 254px; overflow: hidden; position: relative;">
+                <img src="/Content/images/hoursinfo.jpg" style="width: 100%; position: absolute; top: 0;" alt="Hours & Information">
+            </div>
+            <h3 style="color: #333 !important">Come Visit Our Showroom!</h3>
+            <p>
+                Freeway Isuzu is a premier medium duty truck dealer with 30 years experience selling trucks in a wide range of models including the NPR, NPR-HD, NQR, NRR and Crew Cab models. The dealership prides itself on the constant  acquisition of premium pre-owned and new Isuzu trucks. We buy right and pass the savings on to you. The staff at Freeway is well versed in the needs of the commercial truck market and can provide nearly every solution to meet your company's needs or requirements be it with commercial vehicles, parts ordering,  service needs and financing opportunities. Thank you for visiting our online inventory or if you want come see us and our showroom in person we'll be happy to welcome you!
+            </p>
+            <p>
+                We are conveniently located off the 91 Freeway's 6<sup>th</sup> Street exit in Corona, CA
+            </p>
+            <a target="_blank" href="https://www.google.com/maps/place/Freeway+Isuzu/&#64;33.879879,-117.598272,17z/data=!3m1!4b1!4m2!3m1!1s0x80dcc8f5a116568f:0xf2b9b4fd43504cde?hl=en-US" class="btn success">Click Here to For Directions!</a>
+            
+            <!-- Dealerinfo ROW -->
+            @{ Html.RenderPartial("~/Views/Shared/_DealerInfo.cshtml"); }
+            <!-- END OF Dealerinfo ROW -->
+        </div>
+
+        <!-- FOOTER ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_Footer.cshtml"); }
+        <!-- END OF FOOTER ROW -->
+    </div>
+    <!-- END OF MAIN CELL -->
+
+    <!-- SIDEBAR CELL -->
+    <div class="span4" id="sidebar" style="margin-left: 0px;">
+        <!-- SOCIAL MEDIA ROW -->
+        <div class="span4">
+            <!-- CONTACT FORM ROW -->
+            @{ Html.RenderPartial("~/Views/Shared/_ContactForm.cshtml"); }
+            <!-- END OF CONTACT FORM ROW -->
+
+            <!-- MAP ROW -->
+            @{ Html.RenderPartial("~/Views/Shared/_Map.cshtml"); }
+            <!-- END OF MAP ROW -->
+
+        </div>
+
+        <!-- END OF SOCIAL MEDIA ROW -->
+    </div>
+    <!-- END OF SIDEBAR CELL -->
+</div>
+<script type="text/javascript">
+    $("div.mn-dealer-contact").addClass("nav-active");
+</script>

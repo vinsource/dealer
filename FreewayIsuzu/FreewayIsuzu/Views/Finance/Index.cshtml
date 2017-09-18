@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Finance";
+}
+
+@section meta{
+    <meta name="description" content="Freeway Isuzu - Finance ✓ Finding your used trucks ✓ new trucks ✓ Hundreds of cars for sale ✓ Good prices ✓ Daily updated" />
+}
+
+<link type="text/css" rel="stylesheet" href="/Content/css/salefinance.css" />
+<link type="text/css" rel="stylesheet" href="/Content/css/responsive.css" />
+<link type="text/css" rel="stylesheet" href="/Content/css/serviceInfoResponsive.css"/>
+<style>
+    #tertiary-cell h1 {
+        color: #333 !important;
+        font-size: 24px;
+    }
+</style>
+
+<div class="row specials" id="content" style="height: 800px;">
+
+    <div class="span12" id="tertiary-cell">
+        <!-- MAIN COLUMN CELL -->
+        <div id="finance-app-listing">
+            <!-- AD CELLS -->
+            <h1>Finance Application</h1>
+            <p>
+                We work with over 100 banks to ensure you get the best
+                financing available. Want to use your credit union? No problem! If
+                we can't meet or beat their rates, we are happy to work with them
+                to make your car buying experience the best EVER.
+            </p>
+            <p>
+                We also offer special financing! If you have bad credit, no
+                credit, bankruptcy, or divorce, we can get you approved. Just fill
+                out our secure credit application and we'll get to work getting
+                you into the car of your dreams.
+            </p>
+            <input class="button" id="financeApply" type="button" name="credit" value="Apply for Credit!" />
+        </div>
+        <!-- END OF AD CELLS -->
+
+        <!-- FOOTER ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_Footer.cshtml"); }
+        <!-- END OF FOOTER ROW -->
+
+    </div>
+    <!-- END OF MAIN CELL -->
+    <div class="span4" id="sidebar">
+        <!-- CONTACT FORM ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_ContactForm.cshtml"); }
+        <!-- END OF CONTACT FORM ROW -->
+
+        <!-- MAP ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_Map.cshtml"); }
+        <!-- END OF MAP ROW -->
+
+        <!-- Dealerinfo ROW -->
+        @{ Html.RenderPartial("~/Views/Shared/_DealerInfo.cshtml"); }
+        <!-- END OF Dealerinfo ROW -->
+    </div>
+    <!-- END OF SIDEBAR CELL -->
+</div>
+<script src="/Scripts/libraries/jquery.base64.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $("div.mn-sale-finance").addClass("nav-active");
+    $("#financeApply").click(function () {
+        var baseUrlTemp = "https://creditapp.vincontrol.com/credit-application/v2/";
+        var dealerId = 37695;
+        var code = $.base64.encode(dealerId);
+        var url = baseUrlTemp + code;
+        window.open(url, "", 'width=700,height=800,scrollbars=1');
+    });
+</script>

@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://freewayisuzu.com/</title>
+  <link>http://freewayisuzu.com/</link>
+
+<item>
+     <link>http://freewayisuzu.com/</link>
+     <title>Freeway Isuzu Truck</title>
+     <description>Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/vehicle-specials</link>
+     <title>Freeway Isuzu - Vehicle Specials</title>
+     <description>Freeway Isuzu, Value Trade, Commercial Vehicles, Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Specials/Lease</link>
+     <title>Freeway Isuzu - Lease</title>
+     <description>Lease, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Specials/Service</link>
+     <title>Freeway Isuzu - Service Specials</title>
+     <description>Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Service, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Specials/Parts</link>
+     <title>Freeway Isuzu - Parts Specials</title>
+     <description>Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, Parts, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/inventory/new-cars</link>
+     <title>Freeway Isuzu - New Cars Inventory</title>
+     <description>New Cars Inventory, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Showroom</link>
+     <title>Freeway Isuzu - Showroom</title>
+     <description>Showroom, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/vehicle/value-trade</link>
+     <title>Freeway Isuzu - Value My Trade</title>
+     <description>Value My Trade, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/truck-comparison</link>
+     <title>Freeway Isuzu - Truck Comparison</title>
+     <description>Truck Comparison, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/truck-locator</link>
+     <title>Freeway Isuzu - Truck Locator</title>
+     <description>Truck Locator, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/inventory/used-cars</link>
+     <title>Freeway Isuzu - Used Cars Inventory</title>
+     <description>Used Cars Inventory, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Finance/Quote</link>
+     <title>Freeway Isuzu - Get Quote</title>
+     <description>Get Quote, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Finance</link>
+     <title>Freeway Isuzu - Finance</title>
+     <description>Finance, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/test-drive</link>
+     <title>Freeway Isuzu - Test Drive</title>
+     <description>Test Drive, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Contact/Fleet</link>
+     <title>Freeway Isuzu - Fleet</title>
+     <description>Fleet, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/service-info</link>
+     <title>Freeway Isuzu - Service Info</title>
+     <description>Service Info, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/service-retail</link>
+     <title>Freeway Isuzu - Retail</title>
+     <description>Retail, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/dealership-information</link>
+     <title>Freeway Isuzu - Dealership Information</title>
+     <description>Dealership Information, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Inventory/Detail/2012-Porsche-Panamera/WP0AA2A71CL010872</link>
+     <title>Freeway Isuzu - 2012 Porsche Panamera</title>
+     <description>2012 Porsche Panamera, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Inventory/Detail/2011-Ford-Super-Duty-F-250-SRW/1FDBF2A66BEA80878</link>
+     <title>Freeway Isuzu - 2011 Ford Super Duty F 250 SRW</title>
+     <description>2011 Ford Super Duty F 250 SRW, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Inventory/Detail/2014-GMC-Savana-Cargo-Van/1GTW7FCA2E1903829</link>
+     <title>Freeway Isuzu - 2014 GMC Savana Cargo Van</title>
+     <description>2014 GMC Savana Cargo Van, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Inventory/Detail/2010-Ford-Super-Duty-F-250-SRW/1FTNF2A59AEA49938</link>
+     <title>Freeway Isuzu - 2010 Ford Super Duty F 250 SRW</title>
+     <description>2010 Ford Super Duty F 250 SRW, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Inventory/Detail/2014-Ford-Econoline-Cargo-Van/1FTNE2EW9EDA31781</link>
+     <title>Freeway Isuzu - 2014 Ford Econoline Cargo Van</title>
+     <description>2014 Ford Econoline Cargo Van, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Inventory/Detail/2004-Gmc-W4s042-W4500-Dsl-Reg/J8DC4B14647007125</link>
+     <title>Freeway Isuzu - 2004 Gmc W4s042 W4500 Dsl Reg</title>
+     <description>2004 Gmc W4s042 W4500 Dsl Reg, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Inventory/Detail/2012-Honda-CR-V/JHLRM3H73CC007125</link>
+     <title>Freeway Isuzu - 2012 Honda CR V</title>
+     <description>2012 Honda CR V, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Inventory/Detail/2010-Chevrolet-Express-Cargo-Van/1GCZGFDA7A1166195</link>
+     <title>Freeway Isuzu - 2010 Chevrolet Express Cargo Van</title>
+     <description>2010 Chevrolet Express Cargo Van, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Inventory/Detail/2002-Gmc-3500/4KDB4B1R92J803291</link>
+     <title>Freeway Isuzu - 2002 Gmc 3500</title>
+     <description>2002 Gmc 3500, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Inventory/Detail/2011-Toyota-Prius/JTDKN3DU5B5339366</link>
+     <title>Freeway Isuzu - 2011 Toyota Prius</title>
+     <description>2011 Toyota Prius, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Inventory/Detail/2014-Jeep-Patriot/1C4NJRBB1ED534047</link>
+     <title>Freeway Isuzu - 2014 Jeep Patriot</title>
+     <description>2014 Jeep Patriot, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Inventory/Detail/2013-Nissan-Altima/1N4AL3AP4DN519205</link>
+     <title>Freeway Isuzu - 2013 Nissan Altima</title>
+     <description>2013 Nissan Altima, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Inventory/Detail/2012-Harley-Davidson-Road-King/1HD1FBM1XCB610495</link>
+     <title>Freeway Isuzu - 2012 Harley Davidson Road King</title>
+     <description>2012 Harley Davidson Road King, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Inventory/Detail/2005-Ford-F150/1FTRF14W25NB91439</link>
+     <title>Freeway Isuzu - 2005 Ford F150</title>
+     <description>2005 Ford F150, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/service-coupon.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/parts-coupon.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/showroom/detail/reach-151-12</link>
+     <title>reach-151-12</title>
+     <description>reach-151-12, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/showroom/detail/reach-151-14</link>
+     <title>reach-151-14</title>
+     <description>reach-151-14, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/showroom/detail/npr-eco-max</link>
+     <title>npr-eco-max</title>
+     <description>npr-eco-max, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/showroom/detail/npr-gas</link>
+     <title>npr-gas</title>
+     <description>npr-gas, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/showroom/detail/npr-gas-crew-cab</link>
+     <title>npr-gas-crew-cab</title>
+     <description>npr-gas-crew-cab, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/showroom/detail/npr-hd-gas</link>
+     <title>npr-hd-gas</title>
+     <description>npr-hd-gas, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/showroom/detail/npr-hd-gas-crew-cab</link>
+     <title>npr-hd-gas-crew-cab</title>
+     <description>npr-hd-gas-crew-cab, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/showroom/detail/npr-hd-diesel</link>
+     <title>npr-hd-diesel</title>
+     <description>npr-hd-diesel, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/showroom/detail/npr-hd-diesel-crew-cab</link>
+     <title>npr-hd-diesel-crew-cab</title>
+     <description>npr-hd-diesel-crew-cab, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/showroom/detail/nqr-diesel</link>
+     <title>nqr-diesel</title>
+     <description>nqr-diesel, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/showroom/detail/nqr-diesel-crew-cab</link>
+     <title>nqr-diesel-crew-cab</title>
+     <description>nqr-diesel-crew-cab, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/showroom/detail/nrr-diesel</link>
+     <title>nrr-diesel</title>
+     <description>nrr-diesel, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_HD_Ford_F450.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_HD_Ram_4500.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_HD_TerraStar.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_HD_GM_Com_Cutaway.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_HD_Gas_Ford_E450.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_HD_Gas_Ford_F450.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_HD_Gas_GM_Cutaway.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_HD_Ram_4500CC.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_HD_TerraStarCC.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_HD_MitsuFuso_FE145_CC.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NQR_CC_Ford_F-550CC.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NQR_CC_Ram_5500CC.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NQR_CC_TerraStarCC.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_Ford_F-350.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_Ram_3500.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_GM_Comm.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_GM_3500.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_Fuso_125.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_Sprinter.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_Gas_Ford_E-350.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_Gas_Ford_F-350.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_Gas_Ram_3500.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NPR_Gas_GM_3500.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NQR_Ford_F-550.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NQR_Ram_5500.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NQR_UD_1800HD.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NQR_TerraStar_Class5.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NQR_Fuso_FE180.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NRR_Ford_F-550.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NRR_Ram_5500.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NRR_UD_2000.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/Content/pdf/Isuzu_NRR_TerraStarClass5.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://freewayisuzu.com/service-parts/appointment</link>
+     <title>Freeway Isuzu - Appointment</title>
+     <description>Appointment, Freeway Isuzu, Value Trade, Commercial Vehicles, Truck Locator, NEW Inventory, Parts Specials, PRE-OWNED Inventory, Service Specials, Isuzu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

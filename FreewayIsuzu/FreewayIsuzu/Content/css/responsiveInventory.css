@@ -1,0 +1,79 @@
+﻿body
+{
+}
+
+@media screen and (max-width: 700px)
+{
+    #loSearchInput
+    {
+        width: 87% !important;
+    }
+
+    #content
+    {
+        margin-top: 37px;
+    }
+
+    #loFtsBtns
+    {
+        width: 9% !important;
+        background-repeat: no-repeat;
+    }
+
+    #inventory .listing-container
+    {
+        width: 63% !important;
+        float: left;
+    }
+    #loading-holder img{
+        margin-left: 38% !important;
+    }
+    div.retailPriceHolder
+    {
+        float: right;
+    }
+
+    #inventory .span3.listing-container
+    {
+        width: 35% !important;
+        margin-right: 2%;
+    }
+
+    table.imageMid, table.imageMid td
+    {
+        height: auto !important;
+        width: 100% !important;
+    }
+
+    #tertiary-cell ul
+    {
+        color: #333;
+        font-size: 14px;
+    }
+
+    #inventory .listing-container
+    {
+        height: 210px;
+    }
+
+    #inventory .price
+    {
+        text-align: right;
+        position: absolute;
+        right: 10px;
+        top: 130px;
+        z-index: 1000;
+        width: 93%;
+    }
+
+    .span6
+    {
+        width: 100% !important;
+    }
+
+    div.row.vehicle-listing
+    {
+        position: relative;
+        height: 210px;
+    }
+}
