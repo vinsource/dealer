@@ -16,7 +16,9 @@ namespace FreewayIsuzu
                 .Include("~/Scripts/libraries/jquery-1.8.2.min.js")
                 //.Include("~/Scripts/libraries/jquery-2.1.1.min.js")
                 .Include("~/Scripts/libraries/jquery-ui-1.8.2.min.js")
-                .Include("~/Scripts/js/bootstrap.min.js").ForceOrdered();
+                .Include("~/Scripts/js/bootstrap.min.js")
+                .Include("~/Scripts/libraries/jquery.browser.js")
+                .ForceOrdered();
             bundles.Add(jquery);
 
             var newJquery = new ScriptBundle("~/bundles/newJquery"/*, new JsMinify()*/);
@@ -24,6 +26,7 @@ namespace FreewayIsuzu
                 .Include("~/Scripts/libraries/jquery-2.1.1.min.js")
                 .Include("~/Scripts/libraries/jquery-ui-1.8.2.min.js")
                 .Include("~/Scripts/js/bootstrap-3.1.1.min.js")
+                .Include("~/Scripts/libraries/jquery.browser.js")
                 .ForceOrdered();
             bundles.Add(newJquery);
 
@@ -64,7 +67,7 @@ namespace FreewayIsuzu
             commCss.Include("~/Content/site.css");
             commCss.Include("~/Scripts/libraries/jquery-ui.css",
                             "~/Scripts/libraries/ui.theme.css",
-                            "~/Scripts/fancybox/jquery.fancybox-1.3.4.css",
+                            "~/Scripts/fancybox/jquery.fancybox-2.1.7.css",
                             //"~/Scripts/js/bxSlider/jquery.bxslider.css",
                             "~/Content/css/bootstrap.css",
                             "~/Content/css/bootstrap.min.css",

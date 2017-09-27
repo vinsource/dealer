@@ -6,7 +6,7 @@
 	Version: 1.3
 */
 (function($) {
-	var pasteEventName = ($.browser.msie ? 'paste' : 'input') + ".mask";
+    var pasteEventName = ($.browser.msie ? 'paste' : 'input') + ".mask";//'input.mask';
 	var iPhone = (window.orientation != undefined);
 
 	$.mask = {
@@ -239,7 +239,8 @@
 							else
 								input.caret(pos);
 						};
-						($.browser.msie ? moveCaret:function(){setTimeout(moveCaret,0)})();
+					    ($.browser.msie ? moveCaret:function(){setTimeout(moveCaret,0)})();
+						//(function () { setTimeout(moveCaret, 0) })();
 					})
 					.bind("blur.mask", function() {
 						checkVal();

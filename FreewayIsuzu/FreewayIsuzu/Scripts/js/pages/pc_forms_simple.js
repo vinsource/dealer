@@ -1,5 +1,5 @@
 //var more_info_api = "/ajax/insert_request_info.php";
-var baseUrlTemp = "https://creditapp.vincontrol.com/credit-application/v2/";
+var baseUrlTemp = "http://creditapp.vincontrol.com/credit-application/v2/";
 
 var url = window.location.href.split("/");
 var vinNumber = url[url.length - 1];

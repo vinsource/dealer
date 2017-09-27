@@ -21,6 +21,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -191,6 +192,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bundles\blank.gif" />
+    <Content Include="bundles\fancybox_overlay.png" />
+    <Content Include="bundles\fancybox_sprite.png" />
     <Content Include="Content\css\bodystyle.css" />
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
@@ -304,6 +308,8 @@
     <Content Include="ror.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Scripts\fancybox\fancybox_overlay.png" />
+    <Content Include="Scripts\fancybox\fancybox_sprite.png" />
     <Content Include="Scripts\fancybox\index.php" />
     <Content Include="Content\pdf\Isuzu_NPR_Ford_F-350.pdf" />
     <Content Include="Content\pdf\Isuzu_NPR_Fuso_125.pdf" />
@@ -386,6 +392,7 @@
     <Content Include="Scripts\fancybox\jquery.fancybox-1.3.4.css" />
     <Content Include="Scripts\fancybox\jquery.fancybox-1.3.4.js" />
     <Content Include="Scripts\fancybox\jquery.fancybox-1.3.4.pack.js" />
+    <Content Include="Scripts\fancybox\jquery.fancybox-2.1.7.css" />
     <Content Include="Scripts\fancybox\jquery.fancybox-2.1.7.pack.js" />
     <Content Include="Scripts\fancybox\jquery.mousewheel-3.0.4.pack.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
@@ -444,6 +451,8 @@
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\libraries\css_browser_selector.js" />
     <Content Include="Scripts\libraries\DateFormmater.js" />
+    <Content Include="Scripts\libraries\fancybox_overlay.png" />
+    <Content Include="Scripts\libraries\fancybox_sprite.png" />
     <Content Include="Scripts\libraries\jquery-1.8.2.min.js" />
     <Content Include="Scripts\libraries\jquery-2.1.1.min.js" />
     <Content Include="Scripts\libraries\jquery-ui-1.8.2.min.js" />
@@ -452,6 +461,7 @@
     <Content Include="Scripts\libraries\jquery-ui.css" />
     <Content Include="Scripts\libraries\jquery-ui.min.js" />
     <Content Include="Scripts\libraries\jquery.base64.js" />
+    <Content Include="Scripts\libraries\jquery.browser.js" />
     <Content Include="Scripts\libraries\jquery.maskedinput-1.4.1.js" />
     <Content Include="Scripts\libraries\jquery.maskedinput.js" />
     <Content Include="Scripts\libraries\jquery.min.js" />
@@ -541,33 +551,61 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\NewVinControlMVC_v7\vincontrol.Application\vincontrol.Application.csproj">
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\vincontrol\vincontrol.Application\vincontrol.Application.csproj">
       <Project>{7f0f1443-be02-4bad-8e5c-34aded92dca3}</Project>
       <Name>vincontrol.Application</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\NewVinControlMVC_v7\vincontrol.Constant\vincontrol.Constant.csproj">
-      <Project>{AD3324CA-2044-4C68-BE5D-CCB63AD12897}</Project>
+    <ProjectReference Include="..\..\..\vincontrol\vincontrol.CarFax\vincontrol.CarFax.csproj">
+      <Project>{e5c5fbb2-88d1-4dc3-ae3a-4ca4e3e4c75e}</Project>
+      <Name>vincontrol.CarFax</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\vincontrol\vincontrol.ChromeAutoService\vincontrol.ChromeAutoService.csproj">
+      <Project>{23190b92-1f6d-429a-9876-821ca8e213cc}</Project>
+      <Name>vincontrol.ChromeAutoService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\vincontrol\vincontrol.ConfigurationManagement\vincontrol.ConfigurationManagement.csproj">
+      <Project>{ebcbf920-a03a-431f-a6ed-40210a37228e}</Project>
+      <Name>vincontrol.ConfigurationManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\vincontrol\vincontrol.Constant\vincontrol.Constant.csproj">
+      <Project>{ad3324ca-2044-4c68-be5d-ccb63ad12897}</Project>
       <Name>vincontrol.Constant</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\NewVinControlMVC_v7\vincontrol.Data\vincontrol.Data.csproj">
-      <Project>{7D76E800-C9D8-407A-8844-A775EE6D5A65}</Project>
+    <ProjectReference Include="..\..\..\vincontrol\vincontrol.Data\vincontrol.Data.csproj">
+      <Project>{7d76e800-c9d8-407a-8844-a775ee6d5a65}</Project>
       <Name>vincontrol.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\NewVinControlMVC_v7\vincontrol.DomainObject\vincontrol.DomainObject.csproj">
+    <ProjectReference Include="..\..\..\vincontrol\vincontrol.DomainObject\vincontrol.DomainObject.csproj">
       <Project>{e5a9809f-55e2-4e2e-9696-48042ddf4305}</Project>
       <Name>vincontrol.DomainObject</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\NewVinControlMVC_v7\vincontrol.EmailHelper\vincontrol.EmailHelper.csproj">
+    <ProjectReference Include="..\..\..\vincontrol\vincontrol.EmailHelper\vincontrol.EmailHelper.csproj">
       <Project>{b54c9c64-f5b1-4e8b-8f4e-d269fbd9cef2}</Project>
       <Name>vincontrol.EmailHelper</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\NewVinControlMVC_v7\vincontrol.Helper\vincontrol.Helper.csproj">
-      <Project>{9B02AFFB-392B-46D8-A75D-A0A5D521222C}</Project>
+    <ProjectReference Include="..\..\..\vincontrol\vincontrol.Helper\vincontrol.Helper.csproj">
+      <Project>{9b02affb-392b-46d8-a75d-a0a5d521222c}</Project>
       <Name>vincontrol.Helper</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <ProjectReference Include="..\..\..\vincontrol\vincontrol.KBB\vincontrol.KBB.csproj">
+      <Project>{b1b5a625-8c49-48e1-87c7-63cf76fc4a1d}</Project>
+      <Name>vincontrol.KBB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\vincontrol\VINControl.Logging\VINControl.Logging.csproj">
+      <Project>{87134a09-6832-4c77-9cae-01e9f1aabbcf}</Project>
+      <Name>VINControl.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\vincontrol\vincontrol.Manheim\vincontrol.Manheim.csproj">
+      <Project>{0fab8214-efd2-43a2-9a93-4c79d3e7ee2d}</Project>
+      <Name>vincontrol.Manheim</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\vincontrol\vincontrol.PdfHelper\vincontrol.PdfHelper.csproj">
+      <Project>{1572d91a-33f5-43f4-9e7b-8cc2a25414bb}</Project>
+      <Name>vincontrol.PdfHelper</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
